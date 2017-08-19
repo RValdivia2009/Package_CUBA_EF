@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_82130_itndatabaseModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="DB_82130_itndatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="LUIS_Scanning" EntityType="DB_82130_itndatabaseModel.LUIS_Scanning" />
+    <EntitySet Name="LUIS_Scanning1" EntityType="DB_82130_itndatabaseModel.LUIS_Scanning1" />
+    <EntitySet Name="tbl_Cuba_Manifiestos" EntityType="DB_82130_itndatabaseModel.tbl_Cuba_Manifiestos" />
+    <EntitySet Name="tbl_Cuba_N_Estados" EntityType="DB_82130_itndatabaseModel.tbl_Cuba_N_Estados" />
+    <EntitySet Name="tbl_Cuba_N_Municipios" EntityType="DB_82130_itndatabaseModel.tbl_Cuba_N_Municipios" />
+    <EntitySet Name="tbl_Cuba_N_Tarif_Miscelaneos" EntityType="DB_82130_itndatabaseModel.tbl_Cuba_N_Tarif_Miscelaneos" />
+    <EntitySet Name="tbl_Cuba_N_Tipo_Envio" EntityType="DB_82130_itndatabaseModel.tbl_Cuba_N_Tipo_Envio" />
+    <EntitySet Name="tbl_Cuba_N_TipoEntrega" EntityType="DB_82130_itndatabaseModel.tbl_Cuba_N_TipoEntrega" />
+    <AssociationSet Name="FK_tbl_Cuba_N_TipoEntrega_tbl_Cuba_N_TipoEntrega" Association="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_TipoEntrega_tbl_Cuba_N_TipoEntrega">
+      <End Role="tbl_Cuba_N_TipoEntrega" EntitySet="tbl_Cuba_N_TipoEntrega" />
+      <End Role="tbl_Cuba_N_TipoEntrega1" EntitySet="tbl_Cuba_N_TipoEntrega" />
+    </AssociationSet>
+    <EntitySet Name="tbl_Cuba_N_tarif_Duraderos" EntityType="DB_82130_itndatabaseModel.tbl_Cuba_N_tarif_Duraderos" />
+    <EntitySet Name="tbl_Cuba_N_Provincias" EntityType="DB_82130_itndatabaseModel.tbl_Cuba_N_Provincias" />
+    <EntitySet Name="tbl_Cuba_N_Zonas_Dura" EntityType="DB_82130_itndatabaseModel.tbl_Cuba_N_Zonas_Dura" />
+    <AssociationSet Name="FK_tbl_Cuba_N_Municipios_tbl_Cuba_N_Provincias" Association="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_Municipios_tbl_Cuba_N_Provincias">
+      <End Role="tbl_Cuba_N_Provincias" EntitySet="tbl_Cuba_N_Provincias" />
+      <End Role="tbl_Cuba_N_Municipios" EntitySet="tbl_Cuba_N_Municipios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Cuba_N_Provincias_tbl_Cuba_N_Zonas_Dura" Association="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_Provincias_tbl_Cuba_N_Zonas_Dura">
+      <End Role="tbl_Cuba_N_Zonas_Dura" EntitySet="tbl_Cuba_N_Zonas_Dura" />
+      <End Role="tbl_Cuba_N_Provincias" EntitySet="tbl_Cuba_N_Provincias" />
+    </AssociationSet>
+    <EntitySet Name="tbl_Cuba_N_Zonas" EntityType="DB_82130_itndatabaseModel.tbl_Cuba_N_Zonas" />
+    <AssociationSet Name="FK_tbl_Cuba_N_Provincias_tbl_Cuba_N_Zonas" Association="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_Provincias_tbl_Cuba_N_Zonas">
+      <End Role="tbl_Cuba_N_Zonas" EntitySet="tbl_Cuba_N_Zonas" />
+      <End Role="tbl_Cuba_N_Provincias" EntitySet="tbl_Cuba_N_Provincias" />
+    </AssociationSet>
+    <EntitySet Name="Cuba_Busqueda_All_Packages" EntityType="DB_82130_itndatabaseModel.Cuba_Busqueda_All_Packages" />
+    <EntitySet Name="tbl_Cuba_Aduana" EntityType="DB_82130_itndatabaseModel.tbl_Cuba_Aduana" />
+    <EntitySet Name="tbl_Cuba_Agencias" EntityType="DB_82130_itndatabaseModel.tbl_Cuba_Agencias" />
+    <AssociationSet Name="FK_tbl_Cuba_Agencias_tbl_Cuba_Agencias" Association="DB_82130_itndatabaseModel.FK_tbl_Cuba_Agencias_tbl_Cuba_Agencias">
+      <End Role="tbl_Cuba_Agencias" EntitySet="tbl_Cuba_Agencias" />
+      <End Role="tbl_Cuba_Agencias1" EntitySet="tbl_Cuba_Agencias" />
+    </AssociationSet>
+    <EntitySet Name="tbl_Cuba_N_Destinatario" EntityType="DB_82130_itndatabaseModel.tbl_Cuba_N_Destinatario" />
+    <EntitySet Name="tbl_Cuba_N_Sender" EntityType="DB_82130_itndatabaseModel.tbl_Cuba_N_Sender" />
+    <AssociationSet Name="FK_tbl_Cuba_N_Destinatario_tbl_Cuba_N_Sender1" Association="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_Destinatario_tbl_Cuba_N_Sender1">
+      <End Role="tbl_Cuba_N_Sender" EntitySet="tbl_Cuba_N_Sender" />
+      <End Role="tbl_Cuba_N_Destinatario" EntitySet="tbl_Cuba_N_Destinatario" />
+    </AssociationSet>
+    <EntitySet Name="TBL_Cuba_Package_Main_Detalles" EntityType="DB_82130_itndatabaseModel.TBL_Cuba_Package_Main_Detalles" />
+    <EntitySet Name="tbl_Cuba_N_FormaPago" EntityType="DB_82130_itndatabaseModel.tbl_Cuba_N_FormaPago" />
+    <EntitySet Name="TBL_Cuba_Package_Main" EntityType="DB_82130_itndatabaseModel.TBL_Cuba_Package_Main" />
+    <AssociationSet Name="FK_TBL_Cuba_Package_Main_TBL_Cuba_Package_Main1" Association="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_TBL_Cuba_Package_Main1">
+      <End Role="tbl_Cuba_Agencias" EntitySet="tbl_Cuba_Agencias" />
+      <End Role="TBL_Cuba_Package_Main" EntitySet="TBL_Cuba_Package_Main" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_Manifiestos1" Association="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_Manifiestos1">
+      <End Role="tbl_Cuba_Manifiestos" EntitySet="tbl_Cuba_Manifiestos" />
+      <End Role="TBL_Cuba_Package_Main" EntitySet="TBL_Cuba_Package_Main" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Destinatario2" Association="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Destinatario2">
+      <End Role="tbl_Cuba_N_Destinatario" EntitySet="tbl_Cuba_N_Destinatario" />
+      <End Role="TBL_Cuba_Package_Main" EntitySet="TBL_Cuba_Package_Main" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Estados1" Association="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Estados1">
+      <End Role="tbl_Cuba_N_Estados" EntitySet="tbl_Cuba_N_Estados" />
+      <End Role="TBL_Cuba_Package_Main" EntitySet="TBL_Cuba_Package_Main" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Cuba_N_FormaPago_tbl_Cuba_N_FormaPago" Association="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_FormaPago_tbl_Cuba_N_FormaPago">
+      <End Role="tbl_Cuba_N_FormaPago" EntitySet="tbl_Cuba_N_FormaPago" />
+      <End Role="tbl_Cuba_N_FormaPago1" EntitySet="tbl_Cuba_N_FormaPago" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_N_FormaPago" Association="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_FormaPago">
+      <End Role="tbl_Cuba_N_FormaPago" EntitySet="tbl_Cuba_N_FormaPago" />
+      <End Role="TBL_Cuba_Package_Main" EntitySet="TBL_Cuba_Package_Main" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Municipios1" Association="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Municipios1">
+      <End Role="tbl_Cuba_N_Municipios" EntitySet="tbl_Cuba_N_Municipios" />
+      <End Role="TBL_Cuba_Package_Main" EntitySet="TBL_Cuba_Package_Main" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Provincias1" Association="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Provincias1">
+      <End Role="tbl_Cuba_N_Provincias" EntitySet="tbl_Cuba_N_Provincias" />
+      <End Role="TBL_Cuba_Package_Main" EntitySet="TBL_Cuba_Package_Main" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Sender1" Association="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Sender1">
+      <End Role="tbl_Cuba_N_Sender" EntitySet="tbl_Cuba_N_Sender" />
+      <End Role="TBL_Cuba_Package_Main" EntitySet="TBL_Cuba_Package_Main" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Tipo_Envio" Association="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Tipo_Envio">
+      <End Role="tbl_Cuba_N_Tipo_Envio" EntitySet="tbl_Cuba_N_Tipo_Envio" />
+      <End Role="TBL_Cuba_Package_Main" EntitySet="TBL_Cuba_Package_Main" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_N_TipoEntrega1" Association="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_TipoEntrega1">
+      <End Role="tbl_Cuba_N_TipoEntrega" EntitySet="tbl_Cuba_N_TipoEntrega" />
+      <End Role="TBL_Cuba_Package_Main" EntitySet="TBL_Cuba_Package_Main" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBL_Cuba_Package_Main_Detalles_TBL_Cuba_Package_Main" Association="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_Detalles_TBL_Cuba_Package_Main">
+      <End Role="TBL_Cuba_Package_Main" EntitySet="TBL_Cuba_Package_Main" />
+      <End Role="TBL_Cuba_Package_Main_Detalles" EntitySet="TBL_Cuba_Package_Main_Detalles" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="LUIS_Scanning">
+    <Key>
+      <PropertyRef Name="id_Paquete" />
+    </Key>
+    <Property Name="id_Paquete" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Paquete" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Peso" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Zona" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="TipoRecogida" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Envio" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Duraderos" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Caja" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="NombreRem" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="DireccionRem" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="NombreDest" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="DirecionDest" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Tel_Dest" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="NoCarnet" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Contenido" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Inv" Type="Int32" />
+    <Property Name="Repack" Type="Int32" />
+    <Property Name="WRImage" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="LUIS_Scanning1">
+    <Key>
+      <PropertyRef Name="id_Paquete" />
+    </Key>
+    <Property Name="id_Paquete" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Paquete_No_" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Peso__Kgs_" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Zona" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Tipo_de_Recogida" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Envio" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Duraderos" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Caja" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Nombre_Rem_" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Direccion_Rem_" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Nombre_Dest_" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Direcion_Dest_" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Tel_Dest_" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="No__Carnet_Id_" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Contenido" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Inv" Type="Int32" />
+    <Property Name="Repack" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tbl_Cuba_Manifiestos">
+    <Key>
+      <PropertyRef Name="id_Manifiestos" />
+    </Key>
+    <Property Name="id_Manifiestos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom_Manifiesto" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Fecha" Type="DateTime" />
+    <NavigationProperty Name="TBL_Cuba_Package_Main" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_Manifiestos1" FromRole="tbl_Cuba_Manifiestos" ToRole="TBL_Cuba_Package_Main" />
+  </EntityType>
+  <EntityType Name="tbl_Cuba_N_Estados">
+    <Key>
+      <PropertyRef Name="id_Estado" />
+    </Key>
+    <Property Name="id_Estado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Estado" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="TBL_Cuba_Package_Main" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Estados1" FromRole="tbl_Cuba_N_Estados" ToRole="TBL_Cuba_Package_Main" />
+  </EntityType>
+  <EntityType Name="tbl_Cuba_N_Municipios">
+    <Key>
+      <PropertyRef Name="id_Municipios" />
+    </Key>
+    <Property Name="id_Municipios" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Municipios" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="id_Provincias" Type="Int32" />
+    <NavigationProperty Name="tbl_Cuba_N_Provincias" Relationship="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_Municipios_tbl_Cuba_N_Provincias" FromRole="tbl_Cuba_N_Municipios" ToRole="tbl_Cuba_N_Provincias" />
+    <NavigationProperty Name="TBL_Cuba_Package_Main" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Municipios1" FromRole="tbl_Cuba_N_Municipios" ToRole="TBL_Cuba_Package_Main" />
+  </EntityType>
+  <EntityType Name="tbl_Cuba_N_Tarif_Miscelaneos">
+    <Key>
+      <PropertyRef Name="id_Tarif_Micelaneos" />
+    </Key>
+    <Property Name="id_Tarif_Micelaneos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Zona" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="M_Rate" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tbl_Cuba_N_Tipo_Envio">
+    <Key>
+      <PropertyRef Name="id_Tipo_Envio" />
+    </Key>
+    <Property Name="id_Tipo_Envio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tipo_Envio" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
+    <Property Type="String" Name="Envio_Letra" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="TBL_Cuba_Package_Main" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Tipo_Envio" FromRole="tbl_Cuba_N_Tipo_Envio" ToRole="TBL_Cuba_Package_Main" />
+  </EntityType>
+  <EntityType Name="tbl_Cuba_N_TipoEntrega">
+    <Key>
+      <PropertyRef Name="id_TipoEntrega" />
+    </Key>
+    <Property Name="id_TipoEntrega" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TipoEntrega" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Rate" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="tbl_Cuba_N_TipoEntrega1" Relationship="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_TipoEntrega_tbl_Cuba_N_TipoEntrega" FromRole="tbl_Cuba_N_TipoEntrega" ToRole="tbl_Cuba_N_TipoEntrega1" />
+    <NavigationProperty Name="tbl_Cuba_N_TipoEntrega2" Relationship="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_TipoEntrega_tbl_Cuba_N_TipoEntrega" FromRole="tbl_Cuba_N_TipoEntrega1" ToRole="tbl_Cuba_N_TipoEntrega" />
+    <NavigationProperty Name="TBL_Cuba_Package_Main" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_TipoEntrega1" FromRole="tbl_Cuba_N_TipoEntrega" ToRole="TBL_Cuba_Package_Main" />
+  </EntityType>
+  <Association Name="FK_tbl_Cuba_N_TipoEntrega_tbl_Cuba_N_TipoEntrega">
+    <End Role="tbl_Cuba_N_TipoEntrega" Type="DB_82130_itndatabaseModel.tbl_Cuba_N_TipoEntrega" Multiplicity="1" />
+    <End Role="tbl_Cuba_N_TipoEntrega1" Type="DB_82130_itndatabaseModel.tbl_Cuba_N_TipoEntrega" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_N_TipoEntrega">
+        <PropertyRef Name="id_TipoEntrega" />
+      </Principal>
+      <Dependent Role="tbl_Cuba_N_TipoEntrega1">
+        <PropertyRef Name="id_TipoEntrega" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="tbl_Cuba_N_tarif_Duraderos">
+    <Key>
+      <PropertyRef Name="id_tarif_Duraderos" />
+    </Key>
+    <Property Type="Int32" Name="id_tarif_Duraderos" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Zonas" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="D_Rate" Precision="18" Scale="2" />
+    <Property Type="String" Name="Letra" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Type="Decimal" Name="Desde" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Hasta" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="D_Costo" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tbl_Cuba_N_Provincias">
+    <Key>
+      <PropertyRef Name="id_Provincia" />
+    </Key>
+    <Property Type="Int32" Name="id_Provincia" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Provincia" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Zona" />
+    <Property Type="Int32" Name="Zona_Dura" />
+    <NavigationProperty Name="tbl_Cuba_N_Municipios" Relationship="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_Municipios_tbl_Cuba_N_Provincias" FromRole="tbl_Cuba_N_Provincias" ToRole="tbl_Cuba_N_Municipios" />
+    <NavigationProperty Name="tbl_Cuba_N_Zonas_Dura" Relationship="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_Provincias_tbl_Cuba_N_Zonas_Dura" FromRole="tbl_Cuba_N_Provincias" ToRole="tbl_Cuba_N_Zonas_Dura" />
+    <NavigationProperty Name="tbl_Cuba_N_Zonas" Relationship="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_Provincias_tbl_Cuba_N_Zonas" FromRole="tbl_Cuba_N_Provincias" ToRole="tbl_Cuba_N_Zonas" />
+    <NavigationProperty Name="TBL_Cuba_Package_Main" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Provincias1" FromRole="tbl_Cuba_N_Provincias" ToRole="TBL_Cuba_Package_Main" />
+  </EntityType>
+  <EntityType Name="tbl_Cuba_N_Zonas_Dura">
+    <Key>
+      <PropertyRef Name="id_Zona_Dura" />
+    </Key>
+    <Property Type="Int32" Name="id_Zona_Dura" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Zona_Dura" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="tbl_Cuba_N_Provincias" Relationship="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_Provincias_tbl_Cuba_N_Zonas_Dura" FromRole="tbl_Cuba_N_Zonas_Dura" ToRole="tbl_Cuba_N_Provincias" />
+  </EntityType>
+  <Association Name="FK_tbl_Cuba_N_Municipios_tbl_Cuba_N_Provincias">
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_Provincias" Role="tbl_Cuba_N_Provincias" Multiplicity="0..1" />
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_Municipios" Role="tbl_Cuba_N_Municipios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_N_Provincias">
+        <PropertyRef Name="id_Provincia" />
+      </Principal>
+      <Dependent Role="tbl_Cuba_N_Municipios">
+        <PropertyRef Name="id_Provincias" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Cuba_N_Provincias_tbl_Cuba_N_Zonas_Dura">
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_Zonas_Dura" Role="tbl_Cuba_N_Zonas_Dura" Multiplicity="0..1" />
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_Provincias" Role="tbl_Cuba_N_Provincias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_N_Zonas_Dura">
+        <PropertyRef Name="id_Zona_Dura" />
+      </Principal>
+      <Dependent Role="tbl_Cuba_N_Provincias">
+        <PropertyRef Name="Zona_Dura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="tbl_Cuba_N_Zonas">
+    <Key>
+      <PropertyRef Name="id_Zona" />
+    </Key>
+    <Property Type="Int32" Name="id_Zona" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Zona" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Zona_Letra" MaxLength="1" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="tbl_Cuba_N_Provincias" Relationship="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_Provincias_tbl_Cuba_N_Zonas" FromRole="tbl_Cuba_N_Zonas" ToRole="tbl_Cuba_N_Provincias" />
+  </EntityType>
+  <Association Name="FK_tbl_Cuba_N_Provincias_tbl_Cuba_N_Zonas">
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_Zonas" Role="tbl_Cuba_N_Zonas" Multiplicity="0..1" />
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_Provincias" Role="tbl_Cuba_N_Provincias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_N_Zonas">
+        <PropertyRef Name="id_Zona" />
+      </Principal>
+      <Dependent Role="tbl_Cuba_N_Provincias">
+        <PropertyRef Name="Zona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Cuba_Busqueda_All_Packages">
+    <Key>
+      <PropertyRef Name="id_Cuba_Package_Main" />
+      <PropertyRef Name="Dest_Nombre" />
+      <PropertyRef Name="Telefono" />
+      <PropertyRef Name="Calle" />
+      <PropertyRef Name="Entre_Calles" />
+    </Key>
+    <Property Type="Int32" Name="id_Cuba_Package_Main" Nullable="false" />
+    <Property Type="DateTime" Name="Date" />
+    <Property Type="String" Name="Dest_Nombre" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Telefono" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Calle" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Entre_Calles" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Provincia" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Municipios" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CI" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sender_Nombre" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Long" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="Wide" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="High" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="Weight" Precision="18" Scale="2" />
+    <Property Type="String" Name="Estado" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TipoEntrega" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Volumen" Precision="18" Scale="2" />
+    <Property Type="String" Name="WR" MaxLength="13" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Tipo_Envio" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Zona" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Caja" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Descrip_Detalles" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Nom_Manifiesto" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AEB" MaxLength="13" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Fich_Letra" MaxLength="2" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Sender_Apellido" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sender_Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Dest_Apellido" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Dest_Email" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Dest_Apto" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Dest_No" MaxLength="6" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_Cuba_Aduana">
+    <Key>
+      <PropertyRef Name="id_Aduana" />
+    </Key>
+    <Property Type="Int32" Name="id_Aduana" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CAPITULOS" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Clase" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Articulos" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UM" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Valor" Precision="18" Scale="2" />
+    <Property Type="String" Name="Notas" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Notas1" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Cant" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_Cuba_Agencias">
+    <Key>
+      <PropertyRef Name="Cod_Agen" />
+    </Key>
+    <Property Type="Int32" Name="id_Agencia" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Cod_Agen" Nullable="false" />
+    <Property Type="String" Name="Nom_Agencia" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_Cuba_Agencias1" Relationship="DB_82130_itndatabaseModel.FK_tbl_Cuba_Agencias_tbl_Cuba_Agencias" FromRole="tbl_Cuba_Agencias" ToRole="tbl_Cuba_Agencias1" />
+    <NavigationProperty Name="tbl_Cuba_Agencias2" Relationship="DB_82130_itndatabaseModel.FK_tbl_Cuba_Agencias_tbl_Cuba_Agencias" FromRole="tbl_Cuba_Agencias1" ToRole="tbl_Cuba_Agencias" />
+    <NavigationProperty Name="TBL_Cuba_Package_Main" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_TBL_Cuba_Package_Main1" FromRole="tbl_Cuba_Agencias" ToRole="TBL_Cuba_Package_Main" />
+  </EntityType>
+  <Association Name="FK_tbl_Cuba_Agencias_tbl_Cuba_Agencias">
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_Agencias" Role="tbl_Cuba_Agencias" Multiplicity="1" />
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_Agencias" Role="tbl_Cuba_Agencias1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_Agencias">
+        <PropertyRef Name="Cod_Agen" />
+      </Principal>
+      <Dependent Role="tbl_Cuba_Agencias1">
+        <PropertyRef Name="Cod_Agen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="tbl_Cuba_N_Destinatario">
+    <Key>
+      <PropertyRef Name="Cod_Destino" />
+    </Key>
+    <Property Type="Int32" Name="id_Destinatario" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Dest_Nombre" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Telefono" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Calle" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Entre_Calles" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Provincias" Nullable="false" />
+    <Property Type="Int32" Name="Municipio" Nullable="false" />
+    <Property Type="String" Name="CI" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="aa" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Dest_Apellido" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Dest_Apto" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Dest_No" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Dest_Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Abencia" />
+    <Property Type="String" Name="Cod_Destino" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Sender" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="tbl_Cuba_N_Sender" Relationship="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_Destinatario_tbl_Cuba_N_Sender1" FromRole="tbl_Cuba_N_Destinatario" ToRole="tbl_Cuba_N_Sender" />
+    <NavigationProperty Name="TBL_Cuba_Package_Main" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Destinatario2" FromRole="tbl_Cuba_N_Destinatario" ToRole="TBL_Cuba_Package_Main" />
+  </EntityType>
+  <EntityType Name="tbl_Cuba_N_Sender">
+    <Key>
+      <PropertyRef Name="Cod_Sender" />
+    </Key>
+    <Property Type="Int32" Name="id_Sender" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Sender_Nombre" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sender_Apellido" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sender_Direcc_1" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sender_Direcc_2" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Telefono" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sender_City" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sender_Phone" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Sender_Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Agencia" />
+    <Property Type="String" Name="Cod_Sender" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="tbl_Cuba_N_Destinatario" Relationship="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_Destinatario_tbl_Cuba_N_Sender1" FromRole="tbl_Cuba_N_Sender" ToRole="tbl_Cuba_N_Destinatario" />
+    <NavigationProperty Name="TBL_Cuba_Package_Main" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Sender1" FromRole="tbl_Cuba_N_Sender" ToRole="TBL_Cuba_Package_Main" />
+  </EntityType>
+  <Association Name="FK_tbl_Cuba_N_Destinatario_tbl_Cuba_N_Sender1">
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_Sender" Role="tbl_Cuba_N_Sender" Multiplicity="0..1" />
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_Destinatario" Role="tbl_Cuba_N_Destinatario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_N_Sender">
+        <PropertyRef Name="Cod_Sender" />
+      </Principal>
+      <Dependent Role="tbl_Cuba_N_Destinatario">
+        <PropertyRef Name="Sender" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TBL_Cuba_Package_Main_Detalles">
+    <Key>
+      <PropertyRef Name="id_Cuba_PackageMain_Detalles" />
+    </Key>
+    <Property Type="Int32" Name="id_Cuba_PackageMain_Detalles" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Cuba_Package_Main" />
+    <Property Type="Decimal" Name="Cantidad" Precision="18" Scale="0" />
+    <Property Type="String" Name="Descripcion" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Valor" Precision="18" Scale="2" />
+    <Property Type="String" Name="WR" MaxLength="13" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Modelo" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Marca" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Serie" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TBL_Cuba_Package_Main" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_Detalles_TBL_Cuba_Package_Main" FromRole="TBL_Cuba_Package_Main_Detalles" ToRole="TBL_Cuba_Package_Main" />
+  </EntityType>
+  <EntityType Name="tbl_Cuba_N_FormaPago">
+    <Key>
+      <PropertyRef Name="id_FormaPago" />
+    </Key>
+    <Property Type="Int32" Name="id_FormaPago" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FormaPago" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_Cuba_N_FormaPago1" Relationship="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_FormaPago_tbl_Cuba_N_FormaPago" FromRole="tbl_Cuba_N_FormaPago" ToRole="tbl_Cuba_N_FormaPago1" />
+    <NavigationProperty Name="tbl_Cuba_N_FormaPago2" Relationship="DB_82130_itndatabaseModel.FK_tbl_Cuba_N_FormaPago_tbl_Cuba_N_FormaPago" FromRole="tbl_Cuba_N_FormaPago1" ToRole="tbl_Cuba_N_FormaPago" />
+    <NavigationProperty Name="TBL_Cuba_Package_Main" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_FormaPago" FromRole="tbl_Cuba_N_FormaPago" ToRole="TBL_Cuba_Package_Main" />
+  </EntityType>
+  <EntityType Name="TBL_Cuba_Package_Main">
+    <Key>
+      <PropertyRef Name="WR" />
+    </Key>
+    <Property Type="Int32" Name="id_Cuba_Package_Main" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="Date" />
+    <Property Type="Int32" Name="Destinatario" />
+    <Property Type="Int32" Name="Sender" />
+    <Property Type="String" Name="Note" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Long" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="Wide" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="High" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="Provincia" />
+    <Property Type="Int32" Name="Municipio" />
+    <Property Type="Int32" Name="Estado" />
+    <Property Type="Int32" Name="Pagado" />
+    <Property Type="String" Name="Usuario" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="TipoEntrega" />
+    <Property Type="Decimal" Name="Rate" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Precio" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="Volumen" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="Manifiesto" />
+    <Property Type="String" Name="WR" Nullable="false" MaxLength="13" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="Tipo_Envio" />
+    <Property Type="String" Name="Zona" MaxLength="1" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Caja" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Descrip_Detalles" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AEB" MaxLength="13" FixedLength="true" Unicode="true" />
+    <Property Type="Decimal" Name="Weight" Precision="18" Scale="2" />
+    <Property Type="String" Name="Fich_Letra" MaxLength="2" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="SenderNombre" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SenderApellido" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Dest_Nombre" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Dest_Apellido" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Agencia" />
+    <Property Type="String" Name="Cod_Sender1" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Dod_Destino1" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Decimal" Name="Descuento" Precision="18" Scale="2" />
+    <Property Type="Decimal" Name="PrecioTotal" Precision="18" Scale="2" />
+    <Property Type="Int32" Name="FormaPago" />
+    <NavigationProperty Name="tbl_Cuba_Agencias" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_TBL_Cuba_Package_Main1" FromRole="TBL_Cuba_Package_Main" ToRole="tbl_Cuba_Agencias" />
+    <NavigationProperty Name="tbl_Cuba_Manifiestos" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_Manifiestos1" FromRole="TBL_Cuba_Package_Main" ToRole="tbl_Cuba_Manifiestos" />
+    <NavigationProperty Name="tbl_Cuba_N_Destinatario" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Destinatario2" FromRole="TBL_Cuba_Package_Main" ToRole="tbl_Cuba_N_Destinatario" />
+    <NavigationProperty Name="tbl_Cuba_N_Estados" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Estados1" FromRole="TBL_Cuba_Package_Main" ToRole="tbl_Cuba_N_Estados" />
+    <NavigationProperty Name="tbl_Cuba_N_FormaPago" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_FormaPago" FromRole="TBL_Cuba_Package_Main" ToRole="tbl_Cuba_N_FormaPago" />
+    <NavigationProperty Name="tbl_Cuba_N_Municipios" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Municipios1" FromRole="TBL_Cuba_Package_Main" ToRole="tbl_Cuba_N_Municipios" />
+    <NavigationProperty Name="tbl_Cuba_N_Provincias" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Provincias1" FromRole="TBL_Cuba_Package_Main" ToRole="tbl_Cuba_N_Provincias" />
+    <NavigationProperty Name="tbl_Cuba_N_Sender" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Sender1" FromRole="TBL_Cuba_Package_Main" ToRole="tbl_Cuba_N_Sender" />
+    <NavigationProperty Name="tbl_Cuba_N_Tipo_Envio" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Tipo_Envio" FromRole="TBL_Cuba_Package_Main" ToRole="tbl_Cuba_N_Tipo_Envio" />
+    <NavigationProperty Name="tbl_Cuba_N_TipoEntrega" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_tbl_Cuba_N_TipoEntrega1" FromRole="TBL_Cuba_Package_Main" ToRole="tbl_Cuba_N_TipoEntrega" />
+    <NavigationProperty Name="TBL_Cuba_Package_Main_Detalles" Relationship="DB_82130_itndatabaseModel.FK_TBL_Cuba_Package_Main_Detalles_TBL_Cuba_Package_Main" FromRole="TBL_Cuba_Package_Main" ToRole="TBL_Cuba_Package_Main_Detalles" />
+  </EntityType>
+  <Association Name="FK_TBL_Cuba_Package_Main_TBL_Cuba_Package_Main1">
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_Agencias" Role="tbl_Cuba_Agencias" Multiplicity="0..1" />
+    <End Type="DB_82130_itndatabaseModel.TBL_Cuba_Package_Main" Role="TBL_Cuba_Package_Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_Agencias">
+        <PropertyRef Name="Cod_Agen" />
+      </Principal>
+      <Dependent Role="TBL_Cuba_Package_Main">
+        <PropertyRef Name="Agencia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_Manifiestos1">
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_Manifiestos" Role="tbl_Cuba_Manifiestos" Multiplicity="0..1" />
+    <End Type="DB_82130_itndatabaseModel.TBL_Cuba_Package_Main" Role="TBL_Cuba_Package_Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_Manifiestos">
+        <PropertyRef Name="id_Manifiestos" />
+      </Principal>
+      <Dependent Role="TBL_Cuba_Package_Main">
+        <PropertyRef Name="Manifiesto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Destinatario2">
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_Destinatario" Role="tbl_Cuba_N_Destinatario" Multiplicity="0..1" />
+    <End Type="DB_82130_itndatabaseModel.TBL_Cuba_Package_Main" Role="TBL_Cuba_Package_Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_N_Destinatario">
+        <PropertyRef Name="Cod_Destino" />
+      </Principal>
+      <Dependent Role="TBL_Cuba_Package_Main">
+        <PropertyRef Name="Dod_Destino1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Estados1">
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_Estados" Role="tbl_Cuba_N_Estados" Multiplicity="0..1" />
+    <End Type="DB_82130_itndatabaseModel.TBL_Cuba_Package_Main" Role="TBL_Cuba_Package_Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_N_Estados">
+        <PropertyRef Name="id_Estado" />
+      </Principal>
+      <Dependent Role="TBL_Cuba_Package_Main">
+        <PropertyRef Name="Estado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Cuba_N_FormaPago_tbl_Cuba_N_FormaPago">
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_FormaPago" Role="tbl_Cuba_N_FormaPago" Multiplicity="1" />
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_FormaPago" Role="tbl_Cuba_N_FormaPago1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_N_FormaPago">
+        <PropertyRef Name="id_FormaPago" />
+      </Principal>
+      <Dependent Role="tbl_Cuba_N_FormaPago1">
+        <PropertyRef Name="id_FormaPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_N_FormaPago">
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_FormaPago" Role="tbl_Cuba_N_FormaPago" Multiplicity="0..1" />
+    <End Type="DB_82130_itndatabaseModel.TBL_Cuba_Package_Main" Role="TBL_Cuba_Package_Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_N_FormaPago">
+        <PropertyRef Name="id_FormaPago" />
+      </Principal>
+      <Dependent Role="TBL_Cuba_Package_Main">
+        <PropertyRef Name="FormaPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Municipios1">
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_Municipios" Role="tbl_Cuba_N_Municipios" Multiplicity="0..1" />
+    <End Type="DB_82130_itndatabaseModel.TBL_Cuba_Package_Main" Role="TBL_Cuba_Package_Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_N_Municipios">
+        <PropertyRef Name="id_Municipios" />
+      </Principal>
+      <Dependent Role="TBL_Cuba_Package_Main">
+        <PropertyRef Name="Municipio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Provincias1">
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_Provincias" Role="tbl_Cuba_N_Provincias" Multiplicity="0..1" />
+    <End Type="DB_82130_itndatabaseModel.TBL_Cuba_Package_Main" Role="TBL_Cuba_Package_Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_N_Provincias">
+        <PropertyRef Name="id_Provincia" />
+      </Principal>
+      <Dependent Role="TBL_Cuba_Package_Main">
+        <PropertyRef Name="Provincia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Sender1">
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_Sender" Role="tbl_Cuba_N_Sender" Multiplicity="0..1" />
+    <End Type="DB_82130_itndatabaseModel.TBL_Cuba_Package_Main" Role="TBL_Cuba_Package_Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_N_Sender">
+        <PropertyRef Name="Cod_Sender" />
+      </Principal>
+      <Dependent Role="TBL_Cuba_Package_Main">
+        <PropertyRef Name="Cod_Sender1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_N_Tipo_Envio">
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_Tipo_Envio" Role="tbl_Cuba_N_Tipo_Envio" Multiplicity="0..1" />
+    <End Type="DB_82130_itndatabaseModel.TBL_Cuba_Package_Main" Role="TBL_Cuba_Package_Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_N_Tipo_Envio">
+        <PropertyRef Name="id_Tipo_Envio" />
+      </Principal>
+      <Dependent Role="TBL_Cuba_Package_Main">
+        <PropertyRef Name="Tipo_Envio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_Cuba_Package_Main_tbl_Cuba_N_TipoEntrega1">
+    <End Type="DB_82130_itndatabaseModel.tbl_Cuba_N_TipoEntrega" Role="tbl_Cuba_N_TipoEntrega" Multiplicity="0..1" />
+    <End Type="DB_82130_itndatabaseModel.TBL_Cuba_Package_Main" Role="TBL_Cuba_Package_Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Cuba_N_TipoEntrega">
+        <PropertyRef Name="id_TipoEntrega" />
+      </Principal>
+      <Dependent Role="TBL_Cuba_Package_Main">
+        <PropertyRef Name="TipoEntrega" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBL_Cuba_Package_Main_Detalles_TBL_Cuba_Package_Main">
+    <End Type="DB_82130_itndatabaseModel.TBL_Cuba_Package_Main" Role="TBL_Cuba_Package_Main" Multiplicity="0..1" />
+    <End Type="DB_82130_itndatabaseModel.TBL_Cuba_Package_Main_Detalles" Role="TBL_Cuba_Package_Main_Detalles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBL_Cuba_Package_Main">
+        <PropertyRef Name="WR" />
+      </Principal>
+      <Dependent Role="TBL_Cuba_Package_Main_Detalles">
+        <PropertyRef Name="WR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

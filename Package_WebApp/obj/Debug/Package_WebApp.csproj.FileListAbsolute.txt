@@ -1,0 +1,78 @@
+D:\Roberto_V\APPLICATIONS_Otras\Package_App_Web\Package_WebApp\Package_WebApp\bin\Package_WebApp.dll
+D:\Roberto_V\APPLICATIONS_Otras\Package_App_Web\Package_WebApp\Package_WebApp\bin\Package_WebApp.pdb
+D:\Roberto_V\APPLICATIONS_Otras\Package_App_Web\Package_WebApp\Package_WebApp\obj\Debug\Package_WebApp.dll
+D:\Roberto_V\APPLICATIONS_Otras\Package_App_Web\Package_WebApp\Package_WebApp\obj\Debug\Package_WebApp.pdb
+D:\Roberto_V\APPLICATIONS_Otras\Package_App_Web\Package_WebApp\Package_WebApp\obj\Debug\Package_WebApp.csprojResolveAssemblyReference.cache
+D:\Roberto_V\APPLICATIONS_ALL\Package_App_Web\Package_WebApp\bin\Package_WebApp.dll
+D:\Roberto_V\APPLICATIONS_ALL\Package_App_Web\Package_WebApp\bin\Package_WebApp.pdb
+D:\Roberto_V\APPLICATIONS_ALL\Package_App_Web\Package_WebApp\obj\Debug\Package_WebApp.csprojResolveAssemblyReference.cache
+D:\Roberto_V\APPLICATIONS_ALL\Package_App_Web\Package_WebApp\obj\Debug\Package_WebApp.dll
+D:\Roberto_V\APPLICATIONS_ALL\Package_App_Web\Package_WebApp\obj\Debug\Package_WebApp.pdb
+D:\Roberto_V\Application_Work\Package_App_Web\Package_WebApp\bin\Package_WebApp.dll
+D:\Roberto_V\Application_Work\Package_App_Web\Package_WebApp\bin\Package_WebApp.pdb
+D:\Roberto_V\Application_Work\Package_App_Web\Package_WebApp\obj\Debug\Package_WebApp.csprojResolveAssemblyReference.cache
+D:\Roberto_V\Application_Work\Package_App_Web\Package_WebApp\obj\Debug\Package_WebApp.dll
+D:\Roberto_V\Application_Work\Package_App_Web\Package_WebApp\obj\Debug\Package_WebApp.pdb
+D:\Roberto_V\Application_Work\Package_App_Web_OLD\Package_WebApp\bin\Package_WebApp.dll
+D:\Roberto_V\Application_Work\Package_App_Web_OLD\Package_WebApp\bin\Package_WebApp.pdb
+D:\Roberto_V\Application_Work\Package_App_Web_OLD\Package_WebApp\obj\Debug\Package_WebApp.csprojResolveAssemblyReference.cache
+D:\Roberto_V\Application_Work\Package_App_Web_OLD\Package_WebApp\obj\Debug\Package_WebApp.dll
+D:\Roberto_V\Application_Work\Package_App_Web_OLD\Package_WebApp\obj\Debug\Package_WebApp.pdb
+D:\Roberto_V\Application_Work\Package_App_Web\Package_WebApp\obj\Debug\RdlCompile.cache
+D:\Roberto_V\Application_Work\Package_App_Web\Package_WebApp\obj\Debug\RdlCompile.compiled
+D:\Roberto_V\Application_Work\Package_App_Web\Package_WebApp\bin\BusinessRefinery.Barcode.Web.dll
+D:\Roberto_V\Application_Work\Package_App_Web\Package_WebApp\bin\Neodynamic.WebControls.BarcodeProfessional.dll
+D:\Roberto_V\Application_Work\Package_App_Web\Package_WebApp\bin\Neodynamic.WebControls.BarcodeProfessional.xml
+D:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\bin\Package_WebApp.dll
+D:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\bin\Package_WebApp.pdb
+D:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\bin\Neodynamic.WebControls.BarcodeProfessional.dll
+D:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\bin\Neodynamic.WebControls.BarcodeProfessional.xml
+D:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\obj\Debug\Package_WebApp.csprojResolveAssemblyReference.cache
+D:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\obj\Debug\RdlCompile.cache
+D:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\obj\Debug\RdlCompile.compiled
+D:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\obj\Debug\Package_WebApp.dll
+D:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\obj\Debug\Package_WebApp.pdb
+E:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\obj\Debug\Package_WebApp.csprojResolveAssemblyReference.cache
+E:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\obj\Debug\RdlCompile.cache
+E:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\obj\Debug\RdlCompile.compiled
+E:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\obj\Debug\Package_WebApp.dll
+E:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\bin\Package_WebApp.dll
+E:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\bin\Package_WebApp.pdb
+E:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\bin\Neodynamic.WebControls.BarcodeProfessional.xml
+E:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\obj\Debug\Package_WebApp.pdb
+E:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\bin\Bytescout.BarCode.dll
+E:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\obj\Debug\Package_WebApp.Properties.Resources.resources
+E:\Roberto_V\Application_Work\Package_CUBA_Web\Package_CUBA_Web\Package_WebApp\obj\Debug\Package_WebApp.csproj.GenerateResource.Cache
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF - Copy (5)\Package_WebApp\obj\Debug\Package_WebApp.csprojResolveAssemblyReference.cache
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF - Copy (5)\Package_WebApp\obj\Debug\Package_WebApp.Properties.Resources.resources
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF - Copy (5)\Package_WebApp\obj\Debug\Package_WebApp.csproj.GenerateResource.Cache
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF - Copy (5)\Package_WebApp\obj\Debug\RdlCompile.cache
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF - Copy (5)\Package_WebApp\obj\Debug\RdlCompile.compiled
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF - Copy (5)\Package_WebApp\obj\Debug\Package_WebApp.dll
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF - Copy (5)\Package_WebApp\obj\Debug\Package_WebApp.pdb
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF - Copy (5)\Package_WebApp\bin\Package_WebApp.dll
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF - Copy (5)\Package_WebApp\bin\Package_WebApp.pdb
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF - Copy (5)\Package_WebApp\bin\Bytescout.BarCode.dll
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF - Copy (5)\Package_WebApp\bin\Ionic.Zip.dll
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF - Copy (5)\Package_WebApp\bin\Neodynamic.WebControls.BarcodeProfessional.xml
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\bin\Package_WebApp.dll
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\bin\Package_WebApp.pdb
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\bin\Bytescout.BarCode.dll
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\obj\Debug\Package_WebApp.csprojResolveAssemblyReference.cache
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\obj\Debug\Package_WebApp.Properties.Resources.resources
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\obj\Debug\Package_WebApp.csproj.GenerateResource.Cache
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\obj\Debug\RdlCompile.cache
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\obj\Debug\RdlCompile.compiled
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\obj\Debug\Package_WebApp.dll
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\obj\Debug\Package_WebApp.pdb
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\bin\PagesMembers\rdlc__ComprobanteEntrega.rdlc
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\bin\PagesMembers\rdlc__ComprobanteMultiple.rdlc
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\bin\PagesMembers\rdlc__Recibos_Paquetes.rdlc
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\bin\PagesMembers\rdlc__Lista_Embarque.rdlc
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\bin\PagesMembers\rdlc__WareHouseManifiesto_AWB.rdlc
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\bin\PagesMembers\rdlc__LabelBarcode.rdlc
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\bin\PagesMembers\rdlc__LabelBarcodeManifiesto1.rdlc
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\bin\PagesMembers\rdlc__LabelWarehouse.rdlc
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\bin\PagesMembers\rdlc__Report1.rdlc
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\bin\PagesMembers\rdlc__WareHouseManifiesto.rdlc
+E:\Roberto_V\Application_Work\Entity_F\Package_CUBA_EF\Package_WebApp\bin\PagesMembers\rdlc__Rep_Report1.rdlc

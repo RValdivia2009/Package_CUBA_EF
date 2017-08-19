@@ -1,0 +1,75 @@
+<form method="post" action="./Busquedas.aspx" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+<div>
+	<table cellspacing="0" rules="all" border="1" id="MainContent_ContentPlaceHolder1_GridView1" style="width:1111px;border-collapse:collapse;font-size: xx-small">
+		<tr>
+			<th scope="col">WR</th><th scope="col">Date</th><th scope="col">SenderNom</th><th scope="col">DestNom</th><th scope="col">Zona</th><th scope="col">Weight</th><th scope="col">Est</th><th scope="col">TipoEnvio</th><th scope="col">TipoEnt</th><th scope="col">AWB</th>
+		</tr><tr>
+			<td>1161001060041</td><td>02/20/2016</td><td>Estalin  Lopez</td><td>Maira Lopez</td><td>B</td><td>25.00</td><td>En Miami</td><td>Duraderos           </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060040</td><td>01/26/2016</td><td>Roberto  Valdivia</td><td>Milba Ancede</td><td>B</td><td>2.00</td><td>En Miami</td><td>Duraderos           </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060039</td><td>01/18/2016</td><td>Roberto  Valdivia</td><td>Leticia Valdivia</td><td>A</td><td>25.00</td><td>En Miami</td><td>Duraderos           </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060038</td><td>01/18/2016</td><td>Susette  Castellanos</td><td>Carlos Fonseca</td><td>B</td><td>5.00</td><td>En Miami</td><td>Duraderos           </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060037</td><td>01/12/2016</td><td>Maricela  Diaz</td><td>Dunia Diaz</td><td>A</td><td>5.00</td><td>En Miami</td><td>Duraderos           </td><td>Entrega Cubapack</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060036</td><td>01/10/2016</td><td>Roberto  Valdivia</td><td>Diosdado Gonzales</td><td>A</td><td>5.00</td><td>En Miami</td><td>Miscelaneas         </td><td>Entrega Cubapack</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060035</td><td>01/10/2016</td><td>Maricela  Diaz</td><td>Dunia Diaz</td><td>A</td><td>2.00</td><td>En Miami</td><td>Duraderos           </td><td>Entrega Cubapack</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060034</td><td>01/10/2016</td><td>Maricela  Diaz</td><td>Rafael Alfaro</td><td>C</td><td>54.00</td><td>En Miami</td><td>Miscelaneas         </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060033</td><td>01/10/2016</td><td>Maricela  Diaz</td><td>Josefa Sanchez</td><td>B</td><td>7.00</td><td>En Miami</td><td>Miscelaneas         </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060032</td><td>01/09/2016</td><td>Roberto  Valdivia</td><td>Diosdado Gonzales</td><td>A</td><td>2.00</td><td>En Miami</td><td>Duraderos           </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060031</td><td>01/09/2016</td><td>Roberto  Valdivia</td><td>Milba Ancede</td><td>B</td><td>2.00</td><td>En Miami</td><td>Duraderos           </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060030</td><td>12/30/2015</td><td>Roberto  Valdivia</td><td>Diosdado Gonzales</td><td>A</td><td>41.00</td><td>En Miami</td><td>Miscelaneas         </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060029</td><td>12/28/2015</td><td>Miguel  Valdivia</td><td>Yosvano Gomez</td><td>B</td><td>5.00</td><td>En Miami</td><td>Duraderos           </td><td>Entrega Cubapack</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060028</td><td>12/28/2015</td><td>Luis  Torrez</td><td>Ramon Ruiz</td><td>A</td><td>5.00</td><td>En Miami</td><td>Miscelaneas         </td><td>Entrega Cubapack</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060027</td><td>12/28/2015</td><td>Roberto  Valdivia</td><td>Diosdado Gonzales</td><td>A</td><td>7.00</td><td>En Miami</td><td>Miscelaneas         </td><td>Entrega Cubapack</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060023</td><td>12/26/2015</td><td>Maricela  Diaz</td><td>Rafael Alfaro</td><td>C</td><td>2.00</td><td>En Miami</td><td>Duraderos           </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060018</td><td>12/22/2015</td><td>Luis  Torrez</td><td>Mercedes Zoto</td><td>C</td><td>2.00</td><td>Para Entrega</td><td>Duraderos           </td><td>Entrega Cubapack</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060017</td><td>12/22/2015</td><td>Maricela  Diaz</td><td>Rafael Alfaro</td><td>C</td><td>5.00</td><td>Para Entrega</td><td>Duraderos           </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060016</td><td>12/17/2015</td><td>Susette  Castellanos</td><td>Carlos Fonseca</td><td>A</td><td>7.00</td><td>En Proceso</td><td>Duraderos           </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060015</td><td>12/18/2015</td><td>Maricela  Diaz</td><td>Josefa Sanchez</td><td>A</td><td>14.00</td><td>En Proceso</td><td>Duraderos           </td><td>Entrega Cubapack</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060014</td><td>12/12/2015</td><td>Maricela  Diaz</td><td>Josefa Sanchez</td><td>A</td><td>15.00</td><td>Cuba Aduana</td><td>Duraderos           </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060013</td><td>12/07/2015</td><td>Maricela  Diaz</td><td>Josefa Sanchez</td><td>A</td><td>15.00</td><td>Cuba Aduana</td><td>Duraderos           </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060012</td><td>12/07/2015</td><td>Roberto  Valdivia</td><td>Leticia Valdivia</td><td>A</td><td>7.00</td><td>En Proceso</td><td>Duraderos           </td><td>Entrega Cubapack</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060011</td><td>12/07/2015</td><td>Maricela  Diaz</td><td>Josefa Sanchez</td><td>A</td><td>5.00</td><td>En Proceso</td><td>Duraderos           </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060010</td><td>12/06/2015</td><td>Roberto  Valdivia</td><td>Manuel Gomez</td><td>A</td><td>5.00</td><td>Para Entrega</td><td>Miscelaneas         </td><td>Entrega Cubapack</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060009</td><td>11/29/2015</td><td>Luis  Torrez</td><td>Ramon Ruiz</td><td>A</td><td>10.00</td><td>Para Entrega</td><td>Miscelaneas         </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060008</td><td>11/29/2015</td><td>Luis  Torrez</td><td>Ramon Ruiz</td><td>A</td><td>15.00</td><td>Para Entrega</td><td>Miscelaneas         </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060007</td><td>11/29/2015</td><td>Roberto  Valdivia</td><td>Diosdado Gonzales</td><td>A</td><td>10.00</td><td>Entregado</td><td>Miscelaneas         </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060006</td><td>11/29/2015</td><td>Roberto  Valdivia</td><td>Milba Ancede</td><td>B</td><td>5.00</td><td>Entregado</td><td>Miscelaneas         </td><td>Entrega Cubapack</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060005</td><td>11/10/2015</td><td>Maricela  Diaz</td><td>Dunia Diaz</td><td>A</td><td>2.00</td><td>Entregado</td><td>Miscelaneas         </td><td>Entrega Cubapack</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060004</td><td>11/29/2015</td><td>Maricela  Diaz</td><td>Miguel Diaz</td><td>A</td><td>10.00</td><td>Entregado</td><td>Miscelaneas         </td><td>Recogida</td><td>992 25201390 </td>
+		</tr><tr>
+			<td>1161001060003</td><td>06/14/2015</td><td>Maricela  Diaz</td><td>Miguel Diaz</td><td>A</td><td>7.00</td><td>Entregado</td><td>Miscelaneas         </td><td>Recogida</td><td>992 25201390 </td>
+		</tr>
+	</table>
+</div></form>

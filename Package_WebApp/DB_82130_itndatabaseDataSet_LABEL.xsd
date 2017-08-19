@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DB_82130_itndatabaseDataSet_LABEL" targetNamespace="http://tempuri.org/DB_82130_itndatabaseDataSet_LABEL.xsd" xmlns:mstns="http://tempuri.org/DB_82130_itndatabaseDataSet_LABEL.xsd" xmlns="http://tempuri.org/DB_82130_itndatabaseDataSet_LABEL.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Package_WebApp.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        TBL_Package_Main.Date, TBL_Package_Main.Note, TBL_Package_Main.Usuario, TBL_Package_Main.WR, tbl_N_Agen_Destination.Name_Agen_Destination, tbl_N_Estado_Package.Estados, 
+                         tbl_N_Agen_Shipper.Name_Agen_Shipper, tbl_N_Consignee.Nom_Consignee, tbl_N_Location.Name_Location, TBL_Package_Main_Detalles.Tracking, TBL_Package_Main_Detalles.Long, 
+                         TBL_Package_Main_Detalles.High, TBL_Package_Main_Detalles.Weight, TBL_Package_Main_Detalles.Quantity, TBL_Package_Main_Detalles.Descrip, TBL_Package_Main_Detalles.id_WR, 
+                         TBL_Package_Main_Detalles.Wide, TBL_Package_Main_Detalles.Value, TBL_Package_Main_Detalles.TotalValue, TBL_Package_Main_Detalles.VolCubic, TBL_Package_Main_Detalles.WeightTotal, 
+                         TBL_Package_Main_Detalles.id_PackageMain_Detalles, TBL_Package_Main.WRImage
+FROM            TBL_Package_Main INNER JOIN
+                         tbl_N_Location ON TBL_Package_Main.Location = tbl_N_Location.id_Location INNER JOIN
+                         tbl_N_Estado_Package ON TBL_Package_Main.EstadosPackege = tbl_N_Estado_Package.id_estado INNER JOIN
+                         tbl_N_Consignee ON TBL_Package_Main.Congsinne = tbl_N_Consignee.id_Consignee INNER JOIN
+                         tbl_N_Agen_Shipper ON TBL_Package_Main.Agen_Shipper = tbl_N_Agen_Shipper.Id_Agen_Shipper INNER JOIN
+                         tbl_N_Agen_Destination ON TBL_Package_Main.Agen_Destination = tbl_N_Agen_Destination.id_Agen_Destination INNER JOIN
+                         TBL_Package_Main_Detalles ON TBL_Package_Main.id_Package_Main = TBL_Package_Main_Detalles.Package_Main</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+              <Mapping SourceColumn="Note" DataSetColumn="Note" />
+              <Mapping SourceColumn="Usuario" DataSetColumn="Usuario" />
+              <Mapping SourceColumn="WR" DataSetColumn="WR" />
+              <Mapping SourceColumn="Name_Agen_Destination" DataSetColumn="Name_Agen_Destination" />
+              <Mapping SourceColumn="Estados" DataSetColumn="Estados" />
+              <Mapping SourceColumn="Name_Agen_Shipper" DataSetColumn="Name_Agen_Shipper" />
+              <Mapping SourceColumn="Nom_Consignee" DataSetColumn="Nom_Consignee" />
+              <Mapping SourceColumn="Name_Location" DataSetColumn="Name_Location" />
+              <Mapping SourceColumn="Tracking" DataSetColumn="Tracking" />
+              <Mapping SourceColumn="Long" DataSetColumn="Long" />
+              <Mapping SourceColumn="High" DataSetColumn="High" />
+              <Mapping SourceColumn="Weight" DataSetColumn="Weight" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="Descrip" DataSetColumn="Descrip" />
+              <Mapping SourceColumn="id_WR" DataSetColumn="id_WR" />
+              <Mapping SourceColumn="Wide" DataSetColumn="Wide" />
+              <Mapping SourceColumn="Value" DataSetColumn="Value" />
+              <Mapping SourceColumn="TotalValue" DataSetColumn="TotalValue" />
+              <Mapping SourceColumn="VolCubic" DataSetColumn="VolCubic" />
+              <Mapping SourceColumn="WeightTotal" DataSetColumn="WeightTotal" />
+              <Mapping SourceColumn="id_PackageMain_Detalles" DataSetColumn="id_PackageMain_Detalles" />
+              <Mapping SourceColumn="WRImage" DataSetColumn="WRImage" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByValorWR" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByWR" GeneratorSourceName="FillByValorWR" GetMethodModifier="Public" GetMethodName="GetDataByWR" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByWR" UserSourceName="FillByValorWR">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        TBL_Package_Main.Date, TBL_Package_Main.Note, TBL_Package_Main.Usuario, TBL_Package_Main.WR, tbl_N_Agen_Destination.Name_Agen_Destination, tbl_N_Estado_Package.Estados, 
+                         tbl_N_Agen_Shipper.Name_Agen_Shipper, tbl_N_Consignee.Nom_Consignee, tbl_N_Location.Name_Location, TBL_Package_Main_Detalles.Tracking, TBL_Package_Main_Detalles.Long, 
+                         TBL_Package_Main_Detalles.High, TBL_Package_Main_Detalles.Weight, TBL_Package_Main_Detalles.Quantity, TBL_Package_Main_Detalles.Descrip, TBL_Package_Main_Detalles.id_WR, 
+                         TBL_Package_Main_Detalles.Wide, TBL_Package_Main_Detalles.Value, TBL_Package_Main_Detalles.TotalValue, TBL_Package_Main_Detalles.VolCubic, TBL_Package_Main_Detalles.WeightTotal, 
+                         TBL_Package_Main_Detalles.id_PackageMain_Detalles
+FROM            TBL_Package_Main INNER JOIN
+                         tbl_N_Location ON TBL_Package_Main.Location = tbl_N_Location.id_Location INNER JOIN
+                         tbl_N_Estado_Package ON TBL_Package_Main.EstadosPackege = tbl_N_Estado_Package.id_estado INNER JOIN
+                         tbl_N_Consignee ON TBL_Package_Main.Congsinne = tbl_N_Consignee.id_Consignee INNER JOIN
+                         tbl_N_Agen_Shipper ON TBL_Package_Main.Agen_Shipper = tbl_N_Agen_Shipper.Id_Agen_Shipper INNER JOIN
+                         tbl_N_Agen_Destination ON TBL_Package_Main.Agen_Destination = tbl_N_Agen_Destination.id_Agen_Destination INNER JOIN
+                         TBL_Package_Main_Detalles ON TBL_Package_Main.id_Package_Main = TBL_Package_Main_Detalles.Package_Main
+WHERE        (TBL_Package_Main.WR = @Valor)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Valor" ColumnName="WR" DataSourceName="DB_82130_itndatabase.dbo.TBL_Package_Main" DataTypeServer="nchar(8)" DbType="String" Direction="Input" ParameterName="@Valor" Precision="0" ProviderType="NChar" Scale="0" Size="8" SourceColumn="WR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DB_82130_itndatabaseDataSet_LABEL" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DB_82130_itndatabaseDataSet_LABEL" msprop:Generator_UserDSName="DB_82130_itndatabaseDataSet_LABEL">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Note" msprop:Generator_ColumnVarNameInTable="columnNote" msprop:Generator_ColumnPropNameInRow="Note" msprop:Generator_ColumnPropNameInTable="NoteColumn" msprop:Generator_UserColumnName="Note" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Usuario" msprop:Generator_ColumnVarNameInTable="columnUsuario" msprop:Generator_ColumnPropNameInRow="Usuario" msprop:Generator_ColumnPropNameInTable="UsuarioColumn" msprop:Generator_UserColumnName="Usuario" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WR" msprop:Generator_ColumnVarNameInTable="columnWR" msprop:Generator_ColumnPropNameInRow="WR" msprop:Generator_ColumnPropNameInTable="WRColumn" msprop:Generator_UserColumnName="WR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name_Agen_Destination" msprop:Generator_ColumnVarNameInTable="columnName_Agen_Destination" msprop:Generator_ColumnPropNameInRow="Name_Agen_Destination" msprop:Generator_ColumnPropNameInTable="Name_Agen_DestinationColumn" msprop:Generator_UserColumnName="Name_Agen_Destination" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estados" msprop:Generator_ColumnVarNameInTable="columnEstados" msprop:Generator_ColumnPropNameInRow="Estados" msprop:Generator_ColumnPropNameInTable="EstadosColumn" msprop:Generator_UserColumnName="Estados" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name_Agen_Shipper" msprop:Generator_ColumnVarNameInTable="columnName_Agen_Shipper" msprop:Generator_ColumnPropNameInRow="Name_Agen_Shipper" msprop:Generator_ColumnPropNameInTable="Name_Agen_ShipperColumn" msprop:Generator_UserColumnName="Name_Agen_Shipper" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nom_Consignee" msprop:Generator_ColumnVarNameInTable="columnNom_Consignee" msprop:Generator_ColumnPropNameInRow="Nom_Consignee" msprop:Generator_ColumnPropNameInTable="Nom_ConsigneeColumn" msprop:Generator_UserColumnName="Nom_Consignee" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name_Location" msprop:Generator_ColumnVarNameInTable="columnName_Location" msprop:Generator_ColumnPropNameInRow="Name_Location" msprop:Generator_ColumnPropNameInTable="Name_LocationColumn" msprop:Generator_UserColumnName="Name_Location" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tracking" msprop:Generator_ColumnVarNameInTable="columnTracking" msprop:Generator_ColumnPropNameInRow="Tracking" msprop:Generator_ColumnPropNameInTable="TrackingColumn" msprop:Generator_UserColumnName="Tracking" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Long" msprop:Generator_ColumnVarNameInTable="columnLong" msprop:Generator_ColumnPropNameInRow="Long" msprop:Generator_ColumnPropNameInTable="LongColumn" msprop:Generator_UserColumnName="Long" type="xs:decimal" minOccurs="0" />
+              <xs:element name="High" msprop:Generator_ColumnVarNameInTable="columnHigh" msprop:Generator_ColumnPropNameInRow="High" msprop:Generator_ColumnPropNameInTable="HighColumn" msprop:Generator_UserColumnName="High" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Weight" msprop:Generator_ColumnVarNameInTable="columnWeight" msprop:Generator_ColumnPropNameInRow="Weight" msprop:Generator_ColumnPropNameInTable="WeightColumn" msprop:Generator_UserColumnName="Weight" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Descrip" msprop:Generator_ColumnVarNameInTable="columnDescrip" msprop:Generator_ColumnPropNameInRow="Descrip" msprop:Generator_ColumnPropNameInTable="DescripColumn" msprop:Generator_UserColumnName="Descrip" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id_WR" msprop:Generator_ColumnVarNameInTable="columnid_WR" msprop:Generator_ColumnPropNameInRow="id_WR" msprop:Generator_ColumnPropNameInTable="id_WRColumn" msprop:Generator_UserColumnName="id_WR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Wide" msprop:Generator_ColumnVarNameInTable="columnWide" msprop:Generator_ColumnPropNameInRow="Wide" msprop:Generator_ColumnPropNameInTable="WideColumn" msprop:Generator_UserColumnName="Wide" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalValue" msprop:Generator_ColumnVarNameInTable="columnTotalValue" msprop:Generator_ColumnPropNameInRow="TotalValue" msprop:Generator_ColumnPropNameInTable="TotalValueColumn" msprop:Generator_UserColumnName="TotalValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VolCubic" msprop:Generator_ColumnVarNameInTable="columnVolCubic" msprop:Generator_ColumnPropNameInRow="VolCubic" msprop:Generator_ColumnPropNameInTable="VolCubicColumn" msprop:Generator_UserColumnName="VolCubic" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WeightTotal" msprop:Generator_ColumnVarNameInTable="columnWeightTotal" msprop:Generator_ColumnPropNameInRow="WeightTotal" msprop:Generator_ColumnPropNameInTable="WeightTotalColumn" msprop:Generator_UserColumnName="WeightTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="id_PackageMain_Detalles" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_PackageMain_Detalles" msprop:Generator_ColumnPropNameInRow="id_PackageMain_Detalles" msprop:Generator_ColumnPropNameInTable="id_PackageMain_DetallesColumn" msprop:Generator_UserColumnName="id_PackageMain_Detalles" type="xs:int" />
+              <xs:element name="Barcode" msprop:Generator_ColumnVarNameInTable="columnBarcode" msprop:Generator_ColumnPropNameInRow="Barcode" msprop:Generator_ColumnPropNameInTable="BarcodeColumn" msprop:Generator_UserColumnName="Barcode" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="WRImage" msprop:Generator_ColumnVarNameInTable="columnWRImage" msprop:Generator_ColumnPropNameInRow="WRImage" msprop:Generator_ColumnPropNameInTable="WRImageColumn" msprop:Generator_UserColumnName="WRImage" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:id_PackageMain_Detalles" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

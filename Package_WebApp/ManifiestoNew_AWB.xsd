@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ManifiestoNew_AWB" targetNamespace="http://tempuri.org/ManifiestoNew_AWB.xsd" xmlns:mstns="http://tempuri.org/ManifiestoNew_AWB.xsd" xmlns="http://tempuri.org/ManifiestoNew_AWB.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="DB_82130_itndatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DB_82130_itndatabaseConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.DB_82130_itndatabaseConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Package_WebApp.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        TBL_Cuba_Package_Main.id_Cuba_Package_Main, tbl_Cuba_N_TipoEntrega.TipoEntrega, tbl_Cuba_N_Provincias.Provincia, tbl_Cuba_N_Estados.Estado, tbl_Cuba_N_Municipios.Municipios, 
+                         tbl_Cuba_N_Destinatario.Dest_Nombre, tbl_Cuba_N_Destinatario.Telefono, tbl_Cuba_N_Destinatario.Calle, tbl_Cuba_N_Destinatario.Entre_Calles, tbl_Cuba_N_Destinatario.CI, 
+                         tbl_Cuba_N_Sender.Sender_Nombre, tbl_Cuba_N_Sender.Sender_Direcc_1, tbl_Cuba_N_Sender.Sender_Direcc_2, tbl_Cuba_N_Sender.Telefono AS Expr1, tbl_Cuba_N_Sender.Sender_City, 
+                         TBL_Cuba_Package_Main.Date, TBL_Cuba_Package_Main.Note, TBL_Cuba_Package_Main.Long, TBL_Cuba_Package_Main.Wide, TBL_Cuba_Package_Main.High, TBL_Cuba_Package_Main.Weight, 
+                         TBL_Cuba_Package_Main.Rate, TBL_Cuba_Package_Main.Precio, TBL_Cuba_Package_Main.Volumen, TBL_Cuba_Package_Main.Manifiesto, tbl_Cuba_Manifiestos.Nom_Manifiesto, 
+                         TBL_Cuba_Package_Main.WR, TBL_Cuba_Package_Main.Zona, tbl_Cuba_N_Tipo_Envio.Tipo_Envio, TBL_Cuba_Package_Main.Caja, TBL_Cuba_Package_Main.Descrip_Detalles, 
+                         tbl_Cuba_N_Tipo_Envio_1.Tipo_Envio AS Expr2, TBL_Cuba_Package_Main.AEB
+FROM            TBL_Cuba_Package_Main INNER JOIN
+                         tbl_Cuba_N_Destinatario ON TBL_Cuba_Package_Main.Destinatario = tbl_Cuba_N_Destinatario.id_Destinatario INNER JOIN
+                         tbl_Cuba_N_Estados ON TBL_Cuba_Package_Main.Estado = tbl_Cuba_N_Estados.id_Estado INNER JOIN
+                         tbl_Cuba_N_Municipios ON TBL_Cuba_Package_Main.Municipio = tbl_Cuba_N_Municipios.id_Municipios INNER JOIN
+                         tbl_Cuba_N_Provincias ON TBL_Cuba_Package_Main.Provincia = tbl_Cuba_N_Provincias.id_Provincia INNER JOIN
+                         tbl_Cuba_N_Sender ON TBL_Cuba_Package_Main.Sender = tbl_Cuba_N_Sender.id_Sender INNER JOIN
+                         tbl_Cuba_N_TipoEntrega ON TBL_Cuba_Package_Main.TipoEntrega = tbl_Cuba_N_TipoEntrega.id_TipoEntrega INNER JOIN
+                         tbl_Cuba_Manifiestos ON TBL_Cuba_Package_Main.Manifiesto = tbl_Cuba_Manifiestos.id_Manifiestos INNER JOIN
+                         tbl_Cuba_N_Tipo_Envio ON TBL_Cuba_Package_Main.Tipo_Envio = tbl_Cuba_N_Tipo_Envio.id_Tipo_Envio INNER JOIN
+                         tbl_Cuba_N_Tipo_Envio AS tbl_Cuba_N_Tipo_Envio_1 ON TBL_Cuba_Package_Main.Tipo_Envio = tbl_Cuba_N_Tipo_Envio_1.id_Tipo_Envio</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_Cuba_Package_Main" DataSetColumn="id_Cuba_Package_Main" />
+              <Mapping SourceColumn="TipoEntrega" DataSetColumn="TipoEntrega" />
+              <Mapping SourceColumn="Provincia" DataSetColumn="Provincia" />
+              <Mapping SourceColumn="Estado" DataSetColumn="Estado" />
+              <Mapping SourceColumn="Municipios" DataSetColumn="Municipios" />
+              <Mapping SourceColumn="Dest_Nombre" DataSetColumn="Dest_Nombre" />
+              <Mapping SourceColumn="Telefono" DataSetColumn="Telefono" />
+              <Mapping SourceColumn="Calle" DataSetColumn="Calle" />
+              <Mapping SourceColumn="Entre_Calles" DataSetColumn="Entre_Calles" />
+              <Mapping SourceColumn="CI" DataSetColumn="CI" />
+              <Mapping SourceColumn="Sender_Nombre" DataSetColumn="Sender_Nombre" />
+              <Mapping SourceColumn="Sender_Direcc_1" DataSetColumn="Sender_Direcc_1" />
+              <Mapping SourceColumn="Sender_Direcc_2" DataSetColumn="Sender_Direcc_2" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="Sender_City" DataSetColumn="Sender_City" />
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+              <Mapping SourceColumn="Note" DataSetColumn="Note" />
+              <Mapping SourceColumn="Long" DataSetColumn="Long" />
+              <Mapping SourceColumn="Wide" DataSetColumn="Wide" />
+              <Mapping SourceColumn="High" DataSetColumn="High" />
+              <Mapping SourceColumn="Weight" DataSetColumn="Weight" />
+              <Mapping SourceColumn="Rate" DataSetColumn="Rate" />
+              <Mapping SourceColumn="Precio" DataSetColumn="Precio" />
+              <Mapping SourceColumn="Volumen" DataSetColumn="Volumen" />
+              <Mapping SourceColumn="Manifiesto" DataSetColumn="Manifiesto" />
+              <Mapping SourceColumn="Nom_Manifiesto" DataSetColumn="Nom_Manifiesto" />
+              <Mapping SourceColumn="WR" DataSetColumn="WR" />
+              <Mapping SourceColumn="Zona" DataSetColumn="Zona" />
+              <Mapping SourceColumn="Tipo_Envio" DataSetColumn="Tipo_Envio" />
+              <Mapping SourceColumn="Caja" DataSetColumn="Caja" />
+              <Mapping SourceColumn="Descrip_Detalles" DataSetColumn="Descrip_Detalles" />
+              <Mapping SourceColumn="Expr2" DataSetColumn="Expr2" />
+              <Mapping SourceColumn="AEB" DataSetColumn="AEB" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="DB_82130_itndatabaseConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="Get_WR" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="Get_WR" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="Get_WR" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        TBL_Cuba_Package_Main.id_Cuba_Package_Main, tbl_Cuba_N_TipoEntrega.TipoEntrega, tbl_Cuba_N_Provincias.Provincia, tbl_Cuba_N_Estados.Estado, tbl_Cuba_N_Municipios.Municipios, 
+                         tbl_Cuba_N_Destinatario.Dest_Nombre, tbl_Cuba_N_Destinatario.Telefono, tbl_Cuba_N_Destinatario.Calle, tbl_Cuba_N_Destinatario.Entre_Calles, tbl_Cuba_N_Destinatario.CI, 
+                         tbl_Cuba_N_Sender.Sender_Nombre, tbl_Cuba_N_Sender.Sender_Direcc_1, tbl_Cuba_N_Sender.Sender_Direcc_2, tbl_Cuba_N_Sender.Telefono AS Expr1, tbl_Cuba_N_Sender.Sender_City, 
+                         TBL_Cuba_Package_Main.Date, TBL_Cuba_Package_Main.Note, TBL_Cuba_Package_Main.Long, TBL_Cuba_Package_Main.Wide, TBL_Cuba_Package_Main.High, TBL_Cuba_Package_Main.Weight, 
+                         TBL_Cuba_Package_Main.Rate, TBL_Cuba_Package_Main.Precio, TBL_Cuba_Package_Main.Volumen, TBL_Cuba_Package_Main.Manifiesto, tbl_Cuba_Manifiestos.Nom_Manifiesto, 
+                         TBL_Cuba_Package_Main.WR, TBL_Cuba_Package_Main.Tipo_Envio, TBL_Cuba_Package_Main.Zona, TBL_Cuba_Package_Main.Caja, TBL_Cuba_Package_Main.Descrip_Detalles, 
+                         tbl_Cuba_N_Tipo_Envio.Tipo_Envio AS Expr2, TBL_Cuba_Package_Main.AEB
+FROM            TBL_Cuba_Package_Main INNER JOIN
+                         tbl_Cuba_N_Destinatario ON TBL_Cuba_Package_Main.Destinatario = tbl_Cuba_N_Destinatario.id_Destinatario INNER JOIN
+                         tbl_Cuba_N_Estados ON TBL_Cuba_Package_Main.Estado = tbl_Cuba_N_Estados.id_Estado INNER JOIN
+                         tbl_Cuba_N_Municipios ON TBL_Cuba_Package_Main.Municipio = tbl_Cuba_N_Municipios.id_Municipios INNER JOIN
+                         tbl_Cuba_N_Provincias ON TBL_Cuba_Package_Main.Provincia = tbl_Cuba_N_Provincias.id_Provincia INNER JOIN
+                         tbl_Cuba_N_Sender ON TBL_Cuba_Package_Main.Sender = tbl_Cuba_N_Sender.id_Sender INNER JOIN
+                         tbl_Cuba_N_TipoEntrega ON TBL_Cuba_Package_Main.TipoEntrega = tbl_Cuba_N_TipoEntrega.id_TipoEntrega INNER JOIN
+                         tbl_Cuba_Manifiestos ON TBL_Cuba_Package_Main.Manifiesto = tbl_Cuba_Manifiestos.id_Manifiestos INNER JOIN
+                         tbl_Cuba_N_Tipo_Envio ON TBL_Cuba_Package_Main.Tipo_Envio = tbl_Cuba_N_Tipo_Envio.id_Tipo_Envio
+WHERE        (TBL_Cuba_Package_Main.AEB = @Filter_WR)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Filter_WR" ColumnName="AEB" DataSourceName="DB_82130_itndatabase.dbo.TBL_Cuba_Package_Main" DataTypeServer="nchar(13)" DbType="String" Direction="Input" ParameterName="@Filter_WR" Precision="0" ProviderType="NChar" Scale="0" Size="13" SourceColumn="AEB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ManifiestoNew_AWB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ManifiestoNew_AWB" msprop:Generator_UserDSName="ManifiestoNew_AWB">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Cuba_Package_Main" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_Cuba_Package_Main" msprop:Generator_ColumnPropNameInRow="id_Cuba_Package_Main" msprop:Generator_ColumnPropNameInTable="id_Cuba_Package_MainColumn" msprop:Generator_UserColumnName="id_Cuba_Package_Main" type="xs:int" />
+              <xs:element name="TipoEntrega" msprop:Generator_ColumnVarNameInTable="columnTipoEntrega" msprop:Generator_ColumnPropNameInRow="TipoEntrega" msprop:Generator_ColumnPropNameInTable="TipoEntregaColumn" msprop:Generator_UserColumnName="TipoEntrega" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Provincia" msprop:Generator_ColumnVarNameInTable="columnProvincia" msprop:Generator_ColumnPropNameInRow="Provincia" msprop:Generator_ColumnPropNameInTable="ProvinciaColumn" msprop:Generator_UserColumnName="Provincia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Municipios" msprop:Generator_ColumnVarNameInTable="columnMunicipios" msprop:Generator_ColumnPropNameInRow="Municipios" msprop:Generator_ColumnPropNameInTable="MunicipiosColumn" msprop:Generator_UserColumnName="Municipios" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Dest_Nombre" msprop:Generator_ColumnVarNameInTable="columnDest_Nombre" msprop:Generator_ColumnPropNameInRow="Dest_Nombre" msprop:Generator_ColumnPropNameInTable="Dest_NombreColumn" msprop:Generator_UserColumnName="Dest_Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telefono" msprop:Generator_ColumnVarNameInTable="columnTelefono" msprop:Generator_ColumnPropNameInRow="Telefono" msprop:Generator_ColumnPropNameInTable="TelefonoColumn" msprop:Generator_UserColumnName="Telefono">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Calle" msprop:Generator_ColumnVarNameInTable="columnCalle" msprop:Generator_ColumnPropNameInRow="Calle" msprop:Generator_ColumnPropNameInTable="CalleColumn" msprop:Generator_UserColumnName="Calle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Entre_Calles" msprop:Generator_ColumnVarNameInTable="columnEntre_Calles" msprop:Generator_ColumnPropNameInRow="Entre_Calles" msprop:Generator_ColumnPropNameInTable="Entre_CallesColumn" msprop:Generator_UserColumnName="Entre_Calles">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CI" msprop:Generator_ColumnVarNameInTable="columnCI" msprop:Generator_ColumnPropNameInRow="CI" msprop:Generator_ColumnPropNameInTable="CIColumn" msprop:Generator_UserColumnName="CI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sender_Nombre" msprop:Generator_ColumnVarNameInTable="columnSender_Nombre" msprop:Generator_ColumnPropNameInRow="Sender_Nombre" msprop:Generator_ColumnPropNameInTable="Sender_NombreColumn" msprop:Generator_UserColumnName="Sender_Nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sender_Direcc_1" msprop:Generator_ColumnVarNameInTable="columnSender_Direcc_1" msprop:Generator_ColumnPropNameInRow="Sender_Direcc_1" msprop:Generator_ColumnPropNameInTable="Sender_Direcc_1Column" msprop:Generator_UserColumnName="Sender_Direcc_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sender_Direcc_2" msprop:Generator_ColumnVarNameInTable="columnSender_Direcc_2" msprop:Generator_ColumnPropNameInRow="Sender_Direcc_2" msprop:Generator_ColumnPropNameInTable="Sender_Direcc_2Column" msprop:Generator_UserColumnName="Sender_Direcc_2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sender_City" msprop:Generator_ColumnVarNameInTable="columnSender_City" msprop:Generator_ColumnPropNameInRow="Sender_City" msprop:Generator_ColumnPropNameInTable="Sender_CityColumn" msprop:Generator_UserColumnName="Sender_City" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Note" msprop:Generator_ColumnVarNameInTable="columnNote" msprop:Generator_ColumnPropNameInRow="Note" msprop:Generator_ColumnPropNameInTable="NoteColumn" msprop:Generator_UserColumnName="Note" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Long" msprop:Generator_ColumnVarNameInTable="columnLong" msprop:Generator_ColumnPropNameInRow="Long" msprop:Generator_ColumnPropNameInTable="LongColumn" msprop:Generator_UserColumnName="Long" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Wide" msprop:Generator_ColumnVarNameInTable="columnWide" msprop:Generator_ColumnPropNameInRow="Wide" msprop:Generator_ColumnPropNameInTable="WideColumn" msprop:Generator_UserColumnName="Wide" type="xs:decimal" minOccurs="0" />
+              <xs:element name="High" msprop:Generator_ColumnVarNameInTable="columnHigh" msprop:Generator_ColumnPropNameInRow="High" msprop:Generator_ColumnPropNameInTable="HighColumn" msprop:Generator_UserColumnName="High" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Weight" msprop:Generator_ColumnVarNameInTable="columnWeight" msprop:Generator_ColumnPropNameInRow="Weight" msprop:Generator_ColumnPropNameInTable="WeightColumn" msprop:Generator_UserColumnName="Weight" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Rate" msprop:Generator_ColumnVarNameInTable="columnRate" msprop:Generator_ColumnPropNameInRow="Rate" msprop:Generator_ColumnPropNameInTable="RateColumn" msprop:Generator_UserColumnName="Rate" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Precio" msprop:Generator_ColumnVarNameInTable="columnPrecio" msprop:Generator_ColumnPropNameInRow="Precio" msprop:Generator_ColumnPropNameInTable="PrecioColumn" msprop:Generator_UserColumnName="Precio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Volumen" msprop:Generator_ColumnVarNameInTable="columnVolumen" msprop:Generator_ColumnPropNameInRow="Volumen" msprop:Generator_ColumnPropNameInTable="VolumenColumn" msprop:Generator_UserColumnName="Volumen" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Manifiesto" msprop:Generator_ColumnVarNameInTable="columnManifiesto" msprop:Generator_ColumnPropNameInRow="Manifiesto" msprop:Generator_ColumnPropNameInTable="ManifiestoColumn" msprop:Generator_UserColumnName="Manifiesto" type="xs:int" minOccurs="0" />
+              <xs:element name="Nom_Manifiesto" msprop:Generator_ColumnVarNameInTable="columnNom_Manifiesto" msprop:Generator_ColumnPropNameInRow="Nom_Manifiesto" msprop:Generator_ColumnPropNameInTable="Nom_ManifiestoColumn" msprop:Generator_UserColumnName="Nom_Manifiesto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WR" msprop:Generator_ColumnVarNameInTable="columnWR" msprop:Generator_ColumnPropNameInRow="WR" msprop:Generator_ColumnPropNameInTable="WRColumn" msprop:Generator_UserColumnName="WR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Barcode" msprop:Generator_ColumnVarNameInTable="columnBarcode" msprop:Generator_ColumnPropNameInRow="Barcode" msprop:Generator_ColumnPropNameInTable="BarcodeColumn" msprop:Generator_UserColumnName="Barcode" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Zona" msprop:Generator_ColumnVarNameInTable="columnZona" msprop:Generator_ColumnPropNameInRow="Zona" msprop:Generator_ColumnPropNameInTable="ZonaColumn" msprop:Generator_UserColumnName="Zona" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tipo_Envio" msprop:Generator_ColumnVarNameInTable="columnTipo_Envio" msprop:Generator_ColumnPropNameInRow="Tipo_Envio" msprop:Generator_ColumnPropNameInTable="Tipo_EnvioColumn" msprop:Generator_UserColumnName="Tipo_Envio" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Caja" msprop:Generator_ColumnVarNameInTable="columnCaja" msprop:Generator_ColumnPropNameInRow="Caja" msprop:Generator_ColumnPropNameInTable="CajaColumn" msprop:Generator_UserColumnName="Caja" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Descrip_Detalles" msprop:Generator_ColumnVarNameInTable="columnDescrip_Detalles" msprop:Generator_ColumnPropNameInRow="Descrip_Detalles" msprop:Generator_ColumnPropNameInTable="Descrip_DetallesColumn" msprop:Generator_UserColumnName="Descrip_Detalles" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr2" msprop:Generator_ColumnVarNameInTable="columnExpr2" msprop:Generator_ColumnPropNameInRow="Expr2" msprop:Generator_ColumnPropNameInTable="Expr2Column" msprop:Generator_UserColumnName="Expr2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AEB" msprop:Generator_ColumnVarNameInTable="columnAEB" msprop:Generator_ColumnPropNameInRow="AEB" msprop:Generator_ColumnPropNameInTable="AEBColumn" msprop:Generator_UserColumnName="AEB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:id_Cuba_Package_Main" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

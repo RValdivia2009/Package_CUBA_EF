@@ -1,0 +1,14 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NestedMasterAdmin.master.cs" Inherits="PackageBox.NestedMasterAdmin" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/PageAdmin/AccessUser.aspx" Text="User" 
+                            Value="User"/>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Cnne" Value="Cnne"/>
+                    </Items>
+                </asp:Menu>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

@@ -1,0 +1,793 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1735E792-0DEE-49AD-8A84-CC2381D2A8BB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Package_WebApp</RootNamespace>
+    <AssemblyName>Package_WebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BusinessRefinery.Barcode.Web, Version=3.0.0.0, Culture=neutral, PublicKeyToken=7fe18771e318cc7c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Instaladores\WebQRBarCode\BusinessRefinery.Barcode.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Bytescout.BarCode">
+      <HintPath>..\..\..\..\..\Instaladores\Referencias\Bytescout.BarCode.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML">
+      <HintPath>C:\Users\Roberto.RValdivia\Desktop\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>App_Data\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>C:\Users\Roberto.RValdivia\Desktop\New folder\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Neodynamic.WebControls.BarcodeProfessional, Version=8.0.2000.0, Culture=neutral, PublicKeyToken=c6b33c3093a0d4cd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Neodynamic\Barcode Professional for ASP.NET\v8.0\Bin\WebForms\Neodynamic.WebControls.BarcodeProfessional.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Barcode\datamatrix_generator.aspx" />
+    <Content Include="Barcode\linear_generator.aspx" />
+    <Content Include="Barcode\micro_pdf417_generator.aspx" />
+    <Content Include="Barcode\micro_qrcode_generator.aspx" />
+    <Content Include="Barcode\pdf417_generator.aspx" />
+    <Content Include="Barcode\qrcode_generator.aspx" />
+    <Content Include="checkmark.png" />
+    <Content Include="Iconos\add_peope1.png" />
+    <Content Include="Iconos\add_peope2.png" />
+    <Content Include="Iconos\aduana.png" />
+    <Content Include="Iconos\bill.png" />
+    <Content Include="Iconos\blank.png" />
+    <Content Include="Iconos\DataBase.png" />
+    <Content Include="Iconos\forms1.png" />
+    <Content Include="Iconos\Gente1.png" />
+    <Content Include="Iconos\Letter2.png" />
+    <Content Include="Iconos\Load1.gif" />
+    <Content Include="Iconos\load2.gif" />
+    <Content Include="Iconos\logo_FrontLine1.jpg" />
+    <Content Include="Iconos\logo_FrontLine2.png" />
+    <Content Include="Iconos\Mail_1.png" />
+    <Content Include="Iconos\plane-icon1.png" />
+    <Content Include="Iconos\printer.png" />
+    <Content Include="Iconos\search.png" />
+    <Content Include="Iconos\Store.png" />
+    <Content Include="Iconos\Upload1.png" />
+    <Content Include="PagesMembers\Busquedas.aspx" />
+    <Content Include="PagesMembers\Coba_PackagesClientes.aspx" />
+    <Content Include="PagesMembers\Cuba_Busca_Export.aspx" />
+    <Content Include="PagesMembers\Cuba_Export_Import_Agen.aspx" />
+    <Content Include="PagesMembers\Cuba_PackageManifiesto.aspx" />
+    <Content Include="PagesMembers\Cuba_PackageTarifas.aspx" />
+    <Content Include="ESTUDIO\CubaRegistro.aspx" />
+    <Content Include="ESTUDIO\Default.aspx" />
+    <Content Include="Iconos\Actions-go-first-view-icon.png" />
+    <Content Include="Iconos\Add-icon.png" />
+    <Content Include="Iconos\BallGreen.png" />
+    <Content Include="Iconos\BallPurple.png" />
+    <Content Include="Iconos\BallRed.png" />
+    <Content Include="Iconos\BallYellow.png" />
+    <Content Include="Iconos\Ball_Blue-icon.png" />
+    <Content Include="Iconos\Ball_Green-icon.png" />
+    <Content Include="Iconos\Ball_Purple-icon.png" />
+    <Content Include="Iconos\ball_Red-icon.png" />
+    <Content Include="Iconos\Ball_Yellow-icon.png" />
+    <Content Include="Iconos\Barcode.gif" />
+    <Content Include="Iconos\Busca-icon.png" />
+    <Content Include="Iconos\Cancel.png" />
+    <Content Include="Iconos\checkmark.png" />
+    <Content Include="Iconos\delete-icon.png" />
+    <Content Include="Iconos\delete.png" />
+    <Content Include="Iconos\Document.png" />
+    <Content Include="Iconos\edit-validated-icon.png" />
+    <Content Include="Iconos\edit.png" />
+    <Content Include="Iconos\Excel.jpg" />
+    <Content Include="Iconos\find.png" />
+    <Content Include="Iconos\folder.png" />
+    <Content Include="Iconos\Gente.png" />
+    <Content Include="Iconos\label.png" />
+    <Content Include="Iconos\last-view-icon.png" />
+    <Content Include="Iconos\Letter.png" />
+    <Content Include="Iconos\Letter1.png" />
+    <Content Include="Iconos\Ner_Register.png" />
+    <Content Include="Iconos\New.png" />
+    <Content Include="Iconos\New1.png" />
+    <Content Include="Iconos\newIcon.png" />
+    <Content Include="Iconos\next-view-icon.png" />
+    <Content Include="Iconos\Ok-icon.png" />
+    <Content Include="Iconos\previous-view-icon.png" />
+    <Content Include="Iconos\print-icon.png" />
+    <Content Include="Iconos\Save-icon.png" />
+    <Content Include="Iconos\Text-Edit-icon.png" />
+    <Content Include="Iconos\update.png" />
+    <Content Include="PageAdmin\AccessUser.aspx" />
+    <Content Include="PageAdmin\Admin.aspx" />
+    <Content Include="ESTUDIO\CubaRegister.aspx" />
+    <Content Include="PagesMembers\Cuba_PackageBusquedas.aspx" />
+    <Content Include="PagesMembers\Cuba_Repo_Manif_Desp.aspx" />
+    <Content Include="PagesMembers\Estudio.aspx" />
+    <Content Include="PagesMembers\LUIS_Inventario.aspx" />
+    <Content Include="PagesMembers\LUIS_Inventary.aspx" />
+    <Content Include="PagesMembers\Members.aspx" />
+    <Content Include="PagesMembers\N_shipper.aspx" />
+    <Content Include="PagesMembers\Package.aspx" />
+    <Content Include="PagesMembers\PackageGeneral.aspx" />
+    <Content Include="PagesMembers\PackageRegistro_EF.aspx" />
+    <Content Include="PagesMembers\Package_Edit.aspx" />
+    <Content Include="PagesMembers\Rep_ComprobanteEntrega.aspx" />
+    <Content Include="PagesMembers\Rep_ComprobanteMultiple.aspx" />
+    <Content Include="PagesMembers\Rep_Lista_Embarque.aspx" />
+    <Content Include="PagesMembers\Rep_LUIS_Manif_Report1.aspx" />
+    <Content Include="PagesMembers\Rep_Recibos_Paquete.aspx" />
+    <Content Include="PagesMembers\Rep_WareHouseManifiesto_AWB.aspx" />
+    <Content Include="PagesMembers\Rep_WareHouseReceive.aspx" />
+    <Content Include="PagesMembers\WebForm1.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\Site111.css" />
+    <Content Include="TreeLineImages\dash.gif" />
+    <Content Include="TreeLineImages\dashminus.gif" />
+    <Content Include="TreeLineImages\dashplus.gif" />
+    <Content Include="TreeLineImages\i.gif" />
+    <Content Include="TreeLineImages\l.gif" />
+    <Content Include="TreeLineImages\lminus.gif" />
+    <Content Include="TreeLineImages\lplus.gif" />
+    <Content Include="TreeLineImages\minus.gif" />
+    <Content Include="TreeLineImages\noexpand.gif" />
+    <Content Include="TreeLineImages\plus.gif" />
+    <Content Include="TreeLineImages\r.gif" />
+    <Content Include="TreeLineImages\rminus.gif" />
+    <Content Include="TreeLineImages\rplus.gif" />
+    <Content Include="TreeLineImages\t.gif" />
+    <Content Include="TreeLineImages\tminus.gif" />
+    <Content Include="TreeLineImages\tplus.gif" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
+    <None Include="Clientes.xls" />
+    <None Include="ComprobanteMult.xsc">
+      <DependentUpon>ComprobanteMult.xsd</DependentUpon>
+    </None>
+    <None Include="ComprobanteMult.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComprobanteMult.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ComprobanteMult.xss">
+      <DependentUpon>ComprobanteMult.xsd</DependentUpon>
+    </None>
+    <None Include="LUIS_Warehouse.xsc">
+      <DependentUpon>LUIS_Warehouse.xsd</DependentUpon>
+    </None>
+    <None Include="LUIS_Warehouse.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LUIS_Warehouse.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="LUIS_Warehouse.xss">
+      <DependentUpon>LUIS_Warehouse.xsd</DependentUpon>
+    </None>
+    <None Include="ManifiestoNew.xsc">
+      <DependentUpon>ManifiestoNew.xsd</DependentUpon>
+    </None>
+    <None Include="ManifiestoNew.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ManifiestoNew.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ManifiestoNew.xss">
+      <DependentUpon>ManifiestoNew.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="Model_Data.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model_Data.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ManifiestoNew_AWB.xsc">
+      <DependentUpon>ManifiestoNew_AWB.xsd</DependentUpon>
+    </None>
+    <None Include="ManifiestoNew_AWB.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ManifiestoNew_AWB.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ManifiestoNew_AWB.xss">
+      <DependentUpon>ManifiestoNew_AWB.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\S_Fail.wav" />
+    <Content Include="PagesMembers\Rep_WareHouseManifiesto.aspx" />
+    <Content Include="PagesMembers\Rep_WareHouse_Label.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Barcode\datamatrix_generator.aspx.cs">
+      <DependentUpon>datamatrix_generator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Barcode\linear_generator.aspx.cs">
+      <DependentUpon>linear_generator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Barcode\micro_pdf417_generator.aspx.cs">
+      <DependentUpon>micro_pdf417_generator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Barcode\micro_qrcode_generator.aspx.cs">
+      <DependentUpon>micro_qrcode_generator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Barcode\pdf417_generator.aspx.cs">
+      <DependentUpon>pdf417_generator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Barcode\qrcode_generator.aspx.cs">
+      <DependentUpon>qrcode_generator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComprobanteMult.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComprobanteMult.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LUIS_Warehouse.Designer.cs">
+      <DependentUpon>LUIS_Warehouse.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="ManifiestoNew.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManifiestoNew.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManifiestoNew_AWB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ManifiestoNew_AWB.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model_Data.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_Data.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Busquedas.aspx.cs">
+      <DependentUpon>Busquedas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Busquedas.aspx.designer.cs">
+      <DependentUpon>Busquedas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Coba_PackagesClientes.aspx.cs">
+      <DependentUpon>Coba_PackagesClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Coba_PackagesClientes.aspx.designer.cs">
+      <DependentUpon>Coba_PackagesClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Cuba_Busca_Export.aspx.cs">
+      <DependentUpon>Cuba_Busca_Export.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Cuba_Busca_Export.aspx.designer.cs">
+      <DependentUpon>Cuba_Busca_Export.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Cuba_Export_Import_Agen.aspx.cs">
+      <DependentUpon>Cuba_Export_Import_Agen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Cuba_Export_Import_Agen.aspx.designer.cs">
+      <DependentUpon>Cuba_Export_Import_Agen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Cuba_PackageManifiesto.aspx.cs">
+      <DependentUpon>Cuba_PackageManifiesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Cuba_PackageManifiesto.aspx.designer.cs">
+      <DependentUpon>Cuba_PackageManifiesto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Cuba_PackageTarifas.aspx.cs">
+      <DependentUpon>Cuba_PackageTarifas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Cuba_PackageTarifas.aspx.designer.cs">
+      <DependentUpon>Cuba_PackageTarifas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_82130_itndatabaseDataSet_LABEL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_82130_itndatabaseDataSet_LABEL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESTUDIO\CubaRegistro.aspx.cs">
+      <DependentUpon>CubaRegistro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESTUDIO\CubaRegistro.aspx.designer.cs">
+      <DependentUpon>CubaRegistro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESTUDIO\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelBarcode.cs">
+      <DependentUpon>LabelBarcode.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LabelBarcode.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LabelBarcode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LUIS_Manifiesto1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LUIS_Manifiesto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NestedMasterAdmin.master.cs">
+      <DependentUpon>NestedMasterAdmin.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedMasterAdmin.master.designer.cs">
+      <DependentUpon>NestedMasterAdmin.master</DependentUpon>
+    </Compile>
+    <Compile Include="NestedMasterPackage.master.cs">
+      <DependentUpon>NestedMasterPackage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedMasterPackage.master.designer.cs">
+      <DependentUpon>NestedMasterPackage.master</DependentUpon>
+    </Compile>
+    <Compile Include="PageAdmin\AccessUser.aspx.cs">
+      <DependentUpon>AccessUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageAdmin\AccessUser.aspx.designer.cs">
+      <DependentUpon>AccessUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageAdmin\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageAdmin\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ESTUDIO\CubaRegister.aspx.cs">
+      <DependentUpon>CubaRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ESTUDIO\CubaRegister.aspx.designer.cs">
+      <DependentUpon>CubaRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Cuba_PackageBusquedas.aspx.cs">
+      <DependentUpon>Cuba_PackageBusquedas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Cuba_PackageBusquedas.aspx.designer.cs">
+      <DependentUpon>Cuba_PackageBusquedas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Cuba_Repo_Manif_Desp.aspx.cs">
+      <DependentUpon>Cuba_Repo_Manif_Desp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Cuba_Repo_Manif_Desp.aspx.designer.cs">
+      <DependentUpon>Cuba_Repo_Manif_Desp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Estudio.aspx.cs">
+      <DependentUpon>Estudio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Estudio.aspx.designer.cs">
+      <DependentUpon>Estudio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\LUIS_Inventario.aspx.cs">
+      <DependentUpon>LUIS_Inventario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\LUIS_Inventario.aspx.designer.cs">
+      <DependentUpon>LUIS_Inventario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\LUIS_Inventary.aspx.cs">
+      <DependentUpon>LUIS_Inventary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\LUIS_Inventary.aspx.designer.cs">
+      <DependentUpon>LUIS_Inventary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Members.aspx.cs">
+      <DependentUpon>Members.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Members.aspx.designer.cs">
+      <DependentUpon>Members.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\N_shipper.aspx.cs">
+      <DependentUpon>N_shipper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\N_shipper.aspx.designer.cs">
+      <DependentUpon>N_shipper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Package.aspx.cs">
+      <DependentUpon>Package.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Package.aspx.designer.cs">
+      <DependentUpon>Package.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\PackageGeneral.aspx.cs">
+      <DependentUpon>PackageGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\PackageGeneral.aspx.designer.cs">
+      <DependentUpon>PackageGeneral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\PackageRegistro_EF.aspx.cs">
+      <DependentUpon>PackageRegistro_EF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\PackageRegistro_EF.aspx.designer.cs">
+      <DependentUpon>PackageRegistro_EF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Package_Edit.aspx.cs">
+      <DependentUpon>Package_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Package_Edit.aspx.designer.cs">
+      <DependentUpon>Package_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_ComprobanteEntrega.aspx.cs">
+      <DependentUpon>Rep_ComprobanteEntrega.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_ComprobanteEntrega.aspx.designer.cs">
+      <DependentUpon>Rep_ComprobanteEntrega.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_ComprobanteMultiple.aspx.cs">
+      <DependentUpon>Rep_ComprobanteMultiple.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_ComprobanteMultiple.aspx.designer.cs">
+      <DependentUpon>Rep_ComprobanteMultiple.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_Lista_Embarque.aspx.cs">
+      <DependentUpon>Rep_Lista_Embarque.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_Lista_Embarque.aspx.designer.cs">
+      <DependentUpon>Rep_Lista_Embarque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_LUIS_Manif_Report1.aspx.cs">
+      <DependentUpon>Rep_LUIS_Manif_Report1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_LUIS_Manif_Report1.aspx.designer.cs">
+      <DependentUpon>Rep_LUIS_Manif_Report1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_Recibos_Paquete.aspx.cs">
+      <DependentUpon>Rep_Recibos_Paquete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_Recibos_Paquete.aspx.designer.cs">
+      <DependentUpon>Rep_Recibos_Paquete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_WareHouseManifiesto.aspx.cs">
+      <DependentUpon>Rep_WareHouseManifiesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_WareHouseManifiesto.aspx.designer.cs">
+      <DependentUpon>Rep_WareHouseManifiesto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_WareHouseManifiesto_AWB.aspx.cs">
+      <DependentUpon>Rep_WareHouseManifiesto_AWB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_WareHouseManifiesto_AWB.aspx.designer.cs">
+      <DependentUpon>Rep_WareHouseManifiesto_AWB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_WareHouseReceive.aspx.cs">
+      <DependentUpon>Rep_WareHouseReceive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_WareHouseReceive.aspx.designer.cs">
+      <DependentUpon>Rep_WareHouseReceive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_WareHouse_Label.aspx.cs">
+      <DependentUpon>Rep_WareHouse_Label.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\Rep_WareHouse_Label.aspx.designer.cs">
+      <DependentUpon>Rep_WareHouse_Label.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesMembers\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesMembers\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="type.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NestedMasterAdmin.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NestedMasterPackage.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PageAdmin\web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PagesMembers\web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DB_82130_itndatabaseDataSet_LABEL.xsc">
+      <DependentUpon>DB_82130_itndatabaseDataSet_LABEL.xsd</DependentUpon>
+    </None>
+    <None Include="DB_82130_itndatabaseDataSet_LABEL.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_82130_itndatabaseDataSet_LABEL.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_82130_itndatabaseDataSet_LABEL.xss">
+      <DependentUpon>DB_82130_itndatabaseDataSet_LABEL.xsd</DependentUpon>
+    </None>
+    <None Include="LabelBarcode.xsc">
+      <DependentUpon>LabelBarcode.xsd</DependentUpon>
+    </None>
+    <None Include="LabelBarcode.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LabelBarcode.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="LabelBarcode.xss">
+      <DependentUpon>LabelBarcode.xsd</DependentUpon>
+    </None>
+    <None Include="LUIS_Manifiesto.xsc">
+      <DependentUpon>LUIS_Manifiesto.xsd</DependentUpon>
+    </None>
+    <None Include="LUIS_Manifiesto.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LUIS_Manifiesto1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LUIS_Manifiesto.xss">
+      <DependentUpon>LUIS_Manifiesto.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sample.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="DataSet\" />
+    <Folder Include="Data_Import\" />
+    <Folder Include="Download\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PagesMembers\rdlc__ComprobanteEntrega.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PagesMembers\rdlc__ComprobanteMultiple.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PagesMembers\rdlc__Recibos_Paquetes.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PagesMembers\rdlc__Lista_Embarque.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PagesMembers\rdlc__WareHouseManifiesto_AWB.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PagesMembers\rdlc__LabelBarcode.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PagesMembers\rdlc__LabelBarcodeManifiesto1.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PagesMembers\rdlc__LabelWarehouse.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PagesMembers\rdlc__Report1.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PagesMembers\rdlc__WareHouseManifiesto.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PagesMembers\rdlc__Rep_Report1.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>13543</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_82130_itndatabaseModelStoreContainer" CdmEntityContainer="DB_82130_itndatabaseEntities">
+    <EntitySetMapping Name="LUIS_Scanning">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.LUIS_Scanning">
+        <MappingFragment StoreEntitySet="LUIS_Scanning">
+          <ScalarProperty Name="id_Paquete" ColumnName="id_Paquete" />
+          <ScalarProperty Name="Paquete" ColumnName="Paquete" />
+          <ScalarProperty Name="Peso" ColumnName="Peso" />
+          <ScalarProperty Name="Zona" ColumnName="Zona" />
+          <ScalarProperty Name="TipoRecogida" ColumnName="TipoRecogida" />
+          <ScalarProperty Name="Envio" ColumnName="Envio" />
+          <ScalarProperty Name="Duraderos" ColumnName="Duraderos" />
+          <ScalarProperty Name="Caja" ColumnName="Caja" />
+          <ScalarProperty Name="NombreRem" ColumnName="NombreRem" />
+          <ScalarProperty Name="DireccionRem" ColumnName="DireccionRem" />
+          <ScalarProperty Name="NombreDest" ColumnName="NombreDest" />
+          <ScalarProperty Name="DirecionDest" ColumnName="DirecionDest" />
+          <ScalarProperty Name="Tel_Dest" ColumnName="Tel.Dest" />
+          <ScalarProperty Name="NoCarnet" ColumnName="NoCarnet" />
+          <ScalarProperty Name="Contenido" ColumnName="Contenido" />
+          <ScalarProperty Name="Inv" ColumnName="Inv" />
+          <ScalarProperty Name="Repack" ColumnName="Repack" />
+          <ScalarProperty Name="WRImage" ColumnName="WRImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LUIS_Scanning1">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.LUIS_Scanning1">
+        <MappingFragment StoreEntitySet="LUIS_Scanning1">
+          <ScalarProperty Name="id_Paquete" ColumnName="id_Paquete" />
+          <ScalarProperty Name="Paquete_No_" ColumnName="Paquete No." />
+          <ScalarProperty Name="Peso__Kgs_" ColumnName="Peso (Kgs)" />
+          <ScalarProperty Name="Zona" ColumnName="Zona" />
+          <ScalarProperty Name="Tipo_de_Recogida" ColumnName="Tipo de Recogida" />
+          <ScalarProperty Name="Envio" ColumnName="Envio" />
+          <ScalarProperty Name="Duraderos" ColumnName="Duraderos" />
+          <ScalarProperty Name="Caja" ColumnName="Caja" />
+          <ScalarProperty Name="Nombre_Rem_" ColumnName="Nombre Rem." />
+          <ScalarProperty Name="Direccion_Rem_" ColumnName="Direccion Rem." />
+          <ScalarProperty Name="Nombre_Dest_" ColumnName="Nombre Dest." />
+          <ScalarProperty Name="Direcion_Dest_" ColumnName="Direcion Dest." />
+          <ScalarProperty Name="Tel_Dest_" ColumnName="Tel.Dest." />
+          <ScalarProperty Name="No__Carnet_Id_" ColumnName="No. Carnet Id." />
+          <ScalarProperty Name="Contenido" ColumnName="Contenido" />
+          <ScalarProperty Name="Inv" ColumnName="Inv" />
+          <ScalarProperty Name="Repack" ColumnName="Repack" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cuba_Manifiestos">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.tbl_Cuba_Manifiestos">
+        <MappingFragment StoreEntitySet="tbl_Cuba_Manifiestos">
+          <ScalarProperty Name="id_Manifiestos" ColumnName="id_Manifiestos" />
+          <ScalarProperty Name="Nom_Manifiesto" ColumnName="Nom_Manifiesto" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cuba_N_Estados">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.tbl_Cuba_N_Estados">
+        <MappingFragment StoreEntitySet="tbl_Cuba_N_Estados">
+          <ScalarProperty Name="id_Estado" ColumnName="id_Estado" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cuba_N_Municipios">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.tbl_Cuba_N_Municipios">
+        <MappingFragment StoreEntitySet="tbl_Cuba_N_Municipios">
+          <ScalarProperty Name="id_Municipios" ColumnName="id_Municipios" />
+          <ScalarProperty Name="Municipios" ColumnName="Municipios" />
+          <ScalarProperty Name="id_Provincias" ColumnName="id_Provincias" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cuba_N_Tarif_Miscelaneos">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.tbl_Cuba_N_Tarif_Miscelaneos">
+        <MappingFragment StoreEntitySet="tbl_Cuba_N_Tarif_Miscelaneos">
+          <ScalarProperty Name="id_Tarif_Micelaneos" ColumnName="id_Tarif_Micelaneos" />
+          <ScalarProperty Name="Zona" ColumnName="Zona" />
+          <ScalarProperty Name="M_Rate" ColumnName="M_Rate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cuba_N_Tipo_Envio">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.tbl_Cuba_N_Tipo_Envio">
+        <MappingFragment StoreEntitySet="tbl_Cuba_N_Tipo_Envio">
+          <ScalarProperty Name="Envio_Letra" ColumnName="Envio_Letra" />
+          <ScalarProperty Name="id_Tipo_Envio" ColumnName="id_Tipo_Envio" />
+          <ScalarProperty Name="Tipo_Envio" ColumnName="Tipo_Envio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cuba_N_TipoEntrega">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.tbl_Cuba_N_TipoEntrega">
+        <MappingFragment StoreEntitySet="tbl_Cuba_N_TipoEntrega">
+          <ScalarProperty Name="id_TipoEntrega" ColumnName="id_TipoEntrega" />
+          <ScalarProperty Name="TipoEntrega" ColumnName="TipoEntrega" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cuba_N_tarif_Duraderos">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.tbl_Cuba_N_tarif_Duraderos">
+        <MappingFragment StoreEntitySet="tbl_Cuba_N_tarif_Duraderos">
+          <ScalarProperty Name="D_Costo" ColumnName="D_Costo" />
+          <ScalarProperty Name="Hasta" ColumnName="Hasta" />
+          <ScalarProperty Name="Desde" ColumnName="Desde" />
+          <ScalarProperty Name="Letra" ColumnName="Letra" />
+          <ScalarProperty Name="D_Rate" ColumnName="D_Rate" />
+          <ScalarProperty Name="Zonas" ColumnName="Zonas" />
+          <ScalarProperty Name="id_tarif_Duraderos" ColumnName="id_tarif_Duraderos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cuba_N_Provincias">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.tbl_Cuba_N_Provincias">
+        <MappingFragment StoreEntitySet="tbl_Cuba_N_Provincias">
+          <ScalarProperty Name="Zona_Dura" ColumnName="Zona_Dura" />
+          <ScalarProperty Name="Zona" ColumnName="Zona" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="id_Provincia" ColumnName="id_Provincia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cuba_N_Zonas_Dura">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.tbl_Cuba_N_Zonas_Dura">
+        <MappingFragment StoreEntitySet="tbl_Cuba_N_Zonas_Dura">
+          <ScalarProperty Name="Zona_Dura" ColumnName="Zona_Dura" />
+          <ScalarProperty Name="id_Zona_Dura" ColumnName="id_Zona_Dura" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cuba_N_Zonas">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.tbl_Cuba_N_Zonas">
+        <MappingFragment StoreEntitySet="tbl_Cuba_N_Zonas">
+          <ScalarProperty Name="Zona_Letra" ColumnName="Zona_Letra" />
+          <ScalarProperty Name="Zona" ColumnName="Zona" />
+          <ScalarProperty Name="id_Zona" ColumnName="id_Zona" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cuba_Busqueda_All_Packages">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.Cuba_Busqueda_All_Packages">
+        <MappingFragment StoreEntitySet="Cuba_Busqueda_All_Packages">
+          <ScalarProperty Name="Dest_No" ColumnName="Dest_No" />
+          <ScalarProperty Name="Dest_Apto" ColumnName="Dest_Apto" />
+          <ScalarProperty Name="Dest_Email" ColumnName="Dest_Email" />
+          <ScalarProperty Name="Dest_Apellido" ColumnName="Dest_Apellido" />
+          <ScalarProperty Name="Sender_Email" ColumnName="Sender_Email" />
+          <ScalarProperty Name="Sender_Apellido" ColumnName="Sender_Apellido" />
+          <ScalarProperty Name="Fich_Letra" ColumnName="Fich_Letra" />
+          <ScalarProperty Name="AEB" ColumnName="AEB" />
+          <ScalarProperty Name="Nom_Manifiesto" ColumnName="Nom_Manifiesto" />
+          <ScalarProperty Name="Descrip_Detalles" ColumnName="Descrip_Detalles" />
+          <ScalarProperty Name="Caja" ColumnName="Caja" />
+          <ScalarProperty Name="Zona" ColumnName="Zona" />
+          <ScalarProperty Name="Tipo_Envio" ColumnName="Tipo_Envio" />
+          <ScalarProperty Name="WR" ColumnName="WR" />
+          <ScalarProperty Name="Volumen" ColumnName="Volumen" />
+          <ScalarProperty Name="TipoEntrega" ColumnName="TipoEntrega" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="High" ColumnName="High" />
+          <ScalarProperty Name="Wide" ColumnName="Wide" />
+          <ScalarProperty Name="Long" ColumnName="Long" />
+          <ScalarProperty Name="Sender_Nombre" ColumnName="Sender_Nombre" />
+          <ScalarProperty Name="CI" ColumnName="CI" />
+          <ScalarProperty Name="Municipios" ColumnName="Municipios" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Entre_Calles" ColumnName="Entre_Calles" />
+          <ScalarProperty Name="Calle" ColumnName="Calle" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Dest_Nombre" ColumnName="Dest_Nombre" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="id_Cuba_Package_Main" ColumnName="id_Cuba_Package_Main" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cuba_Aduana">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.tbl_Cuba_Aduana">
+        <MappingFragment StoreEntitySet="tbl_Cuba_Aduana">
+          <ScalarProperty Name="Cant" ColumnName="Cant" />
+          <ScalarProperty Name="Notas1" ColumnName="Notas1" />
+          <ScalarProperty Name="Notas" ColumnName="Notas" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="UM" ColumnName="UM" />
+          <ScalarProperty Name="Articulos" ColumnName="Articulos" />
+          <ScalarProperty Name="Clase" ColumnName="Clase" />
+          <ScalarProperty Name="CAPITULOS" ColumnName="CAPITULOS" />
+          <ScalarProperty Name="id_Aduana" ColumnName="id_Aduana" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cuba_Agencias">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.tbl_Cuba_Agencias">
+        <MappingFragment StoreEntitySet="tbl_Cuba_Agencias">
+          <ScalarProperty Name="Nom_Agencia" ColumnName="Nom_Agencia" />
+          <ScalarProperty Name="Cod_Agen" ColumnName="Cod_Agen" />
+          <ScalarProperty Name="id_Agencia" ColumnName="id_Agencia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cuba_N_Destinatario">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.tbl_Cuba_N_Destinatario">
+        <MappingFragment StoreEntitySet="tbl_Cuba_N_Destinatario">
+          <ScalarProperty Name="Sender" ColumnName="Sender" />
+          <ScalarProperty Name="Cod_Destino" ColumnName="Cod_Destino" />
+          <ScalarProperty Name="Abencia" ColumnName="Abencia" />
+          <ScalarProperty Name="Dest_Email" ColumnName="Dest_Email" />
+          <ScalarProperty Name="Dest_No" ColumnName="Dest_No" />
+          <ScalarProperty Name="Dest_Apto" ColumnName="Dest_Apto" />
+          <ScalarProperty Name="Dest_Apellido" ColumnName="Dest_Apellido" />
+          <ScalarProperty Name="aa" ColumnName="aa" />
+          <ScalarProperty Name="CI" ColumnName="CI" />
+          <ScalarProperty Name="Municipio" ColumnName="Municipio" />
+          <ScalarProperty Name="Provincias" ColumnName="Provincias" />
+          <ScalarProperty Name="Entre_Calles" ColumnName="Entre_Calles" />
+          <ScalarProperty Name="Calle" ColumnName="Calle" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Dest_Nombre" ColumnName="Dest_Nombre" />
+          <ScalarProperty Name="id_Destinatario" ColumnName="id_Destinatario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cuba_N_Sender">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.tbl_Cuba_N_Sender">
+        <MappingFragment StoreEntitySet="tbl_Cuba_N_Sender">
+          <ScalarProperty Name="Cod_Sender" ColumnName="Cod_Sender" />
+          <ScalarProperty Name="Agencia" ColumnName="Agencia" />
+          <ScalarProperty Name="Sender_Email" ColumnName="Sender_Email" />
+          <ScalarProperty Name="Sender_Phone" ColumnName="Sender_Phone" />
+          <ScalarProperty Name="Sender_City" ColumnName="Sender_City" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Sender_Direcc_2" ColumnName="Sender_Direcc_2" />
+          <ScalarProperty Name="Sender_Direcc_1" ColumnName="Sender_Direcc_1" />
+          <ScalarProperty Name="Sender_Apellido" ColumnName="Sender_Apellido" />
+          <ScalarProperty Name="Sender_Nombre" ColumnName="Sender_Nombre" />
+          <ScalarProperty Name="id_Sender" ColumnName="id_Sender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Cuba_Package_Main_Detalles">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.TBL_Cuba_Package_Main_Detalles">
+        <MappingFragment StoreEntitySet="TBL_Cuba_Package_Main_Detalles">
+          <ScalarProperty Name="Serie" ColumnName="Serie" />
+          <ScalarProperty Name="Marca" ColumnName="Marca" />
+          <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+          <ScalarProperty Name="WR" ColumnName="WR" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Cuba_Package_Main" ColumnName="Cuba_Package_Main" />
+          <ScalarProperty Name="id_Cuba_PackageMain_Detalles" ColumnName="id_Cuba_PackageMain_Detalles" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Cuba_N_FormaPago">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.tbl_Cuba_N_FormaPago">
+        <MappingFragment StoreEntitySet="tbl_Cuba_N_FormaPago">
+          <ScalarProperty Name="FormaPago" ColumnName="FormaPago" />
+          <ScalarProperty Name="id_FormaPago" ColumnName="id_FormaPago" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBL_Cuba_Package_Main">
+      <EntityTypeMapping TypeName="DB_82130_itndatabaseModel.TBL_Cuba_Package_Main">
+        <MappingFragment StoreEntitySet="TBL_Cuba_Package_Main">
+          <ScalarProperty Name="FormaPago" ColumnName="FormaPago" />
+          <ScalarProperty Name="PrecioTotal" ColumnName="PrecioTotal" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+          <ScalarProperty Name="Dod_Destino1" ColumnName="Dod_Destino1" />
+          <ScalarProperty Name="Cod_Sender1" ColumnName="Cod_Sender1" />
+          <ScalarProperty Name="Agencia" ColumnName="Agencia" />
+          <ScalarProperty Name="Dest_Apellido" ColumnName="Dest_Apellido" />
+          <ScalarProperty Name="Dest_Nombre" ColumnName="Dest_Nombre" />
+          <ScalarProperty Name="SenderApellido" ColumnName="SenderApellido" />
+          <ScalarProperty Name="SenderNombre" ColumnName="SenderNombre" />
+          <ScalarProperty Name="Fich_Letra" ColumnName="Fich_Letra" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="AEB" ColumnName="AEB" />
+          <ScalarProperty Name="Descrip_Detalles" ColumnName="Descrip_Detalles" />
+          <ScalarProperty Name="Caja" ColumnName="Caja" />
+          <ScalarProperty Name="Zona" ColumnName="Zona" />
+          <ScalarProperty Name="Tipo_Envio" ColumnName="Tipo_Envio" />
+          <ScalarProperty Name="WR" ColumnName="WR" />
+          <ScalarProperty Name="Manifiesto" ColumnName="Manifiesto" />
+          <ScalarProperty Name="Volumen" ColumnName="Volumen" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="TipoEntrega" ColumnName="TipoEntrega" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Pagado" ColumnName="Pagado" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Municipio" ColumnName="Municipio" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="High" ColumnName="High" />
+          <ScalarProperty Name="Wide" ColumnName="Wide" />
+          <ScalarProperty Name="Long" ColumnName="Long" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Sender" ColumnName="Sender" />
+          <ScalarProperty Name="Destinatario" ColumnName="Destinatario" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="id_Cuba_Package_Main" ColumnName="id_Cuba_Package_Main" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
